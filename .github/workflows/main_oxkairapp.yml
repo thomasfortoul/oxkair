@@ -99,6 +99,10 @@ jobs:
           cd bundle
           zip -r ../site.zip .
 
+      - name: Show expected OIDC subject
+        run: |
+          echo "repo:${GITHUB_REPOSITORY}:ref:${GITHUB_REF}"
+          
       - name: Azure login
         uses: azure/login@v2
         with:
