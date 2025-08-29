@@ -1,0 +1,58 @@
+{
+  "procedureCodes": [
+    {
+      "code": "47600",
+      "description": "Cholecystectomy; open",
+      "isPrimary": true,
+      "evidence": {
+        "description": "Open cholecystectomy performed for biliary atresia.",
+        "excerpt": "Open cholecystectomy"
+      },
+      "sourceNoteType": "Operative Note",
+      "rvu": 15.00
+    },
+    {
+      "code": "47100",
+      "description": "Biopsy of liver, wedge",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Liver biopsy taken for staging.",
+        "excerpt": "Liver biopsy taken from left lobe."
+      },
+      "sourceNoteType": "Operative Note",
+      "rvu": 5.00
+    }
+  ],
+  "diagnosisCodes": [
+    {
+      "code": "Q44.2",
+      "description": "Biliary atresia",
+      "isPrimary": true,
+      "evidence": {
+        "description": "Primary diagnosis of biliary atresia.",
+        "excerpt": "Biliary atresia, requiring cholecystectomy (ICD-10 Q44.2)"
+      },
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "modifierSuggestions": [
+    {
+      "procedureCode": "47600",
+      "modifier": "80",
+      "evidence": {
+        "description": "Assistant surgeon participated in the procedure.",
+        "excerpt": "Assistant surgeon Dr. Bell participated throughout."
+      },
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "complianceIssues": [
+    {
+      "type": "MUE Violation",
+      "description": "Liver biopsy (47100) may be bundled with cholecystectomy (47600).",
+      "affectedCodes": ["47100", "47600"],
+      "violationDetails": "MUE Edit: CPT code 47100 may be considered a component of 47600. Review documentation for distinct procedural service.",
+      "lcdPolicyId": null
+    }
+  ]
+}

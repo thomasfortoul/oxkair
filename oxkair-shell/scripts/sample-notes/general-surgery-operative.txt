@@ -1,0 +1,26 @@
+OPERATIVE NOTE
+
+Patient Name: Joshua Allen      MRN: 147852     DOB: 12/18/2023 (5 months old, weight: 3.5 kg)
+Date of Surgery: 05/23/2025    Time: 7:30 AM
+Surgeon: Dr. Lisa Wright      Assistant: Dr. Mark Bell (MD, assistant surgeon)
+Anesthesia: General Endotracheal
+
+Pre-op Diagnosis: Biliary atresia, requiring cholecystectomy (ICD-10 Q44.2)
+Post-op Diagnosis: Same
+
+Procedures Performed:
+1. Open cholecystectomy
+2. Liver biopsy for staging
+3. Administration of intraoperative intravenous ceftriaxone 500 mg
+4. Placement of sequential compression device (SCD) for DVT prophylaxis
+
+Indication: Infant with progressive jaundice, imaging confirming biliary atresia, planned cholecystectomy and staging.
+
+Findings: Atrophic gallbladder, fibrotic liver, no gallstones.
+
+Procedure:
+After anesthesia, patient prepped/draped in sterile fashion. Right subcostal incision made. Gallbladder mobilized and removed. Liver biopsy taken from left lobe. Hemostasis achieved. Ceftriaxone 500 mg administered IV at start of procedure. Sequential compression devices applied to both lower extremities before incision. Assistant surgeon Dr. Bell participated throughout. Estimated blood loss minimal.
+
+Disposition: Patient extubated in OR, to PACU stable.
+
+Attestation: Assistant surgeon present for entirety of case.

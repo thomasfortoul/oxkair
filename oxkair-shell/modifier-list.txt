@@ -1,0 +1,76 @@
+(quick reference on modifiers to include)
+Assistants & Surgical Teams
+* 62 - Two Surgeons: Two primary surgeons share a complex procedure.
+* 66 - Surgical Team: Multispecialty surgical team performs together.
+* 80 - Assistant Surgeon: Qualified provider assists primary surgeon.
+* 81 - Minimum Assistant Surgeon: Limited assistant role during surgery.
+* 82 - Assistant Surgeon (Resident Unavailable): Assistant steps in when resident unavailable.
+
+Laterality
+* 50 - Bilateral: Same procedure on both sides in one session.
+* RT/LT - Right/Left: Procedure performed on right or left side.
+
+Anatomic Site Modifiers (Grouped)
+* E1–E4: Eyelid site (upper/lower, right/left).
+* F1–F9, FA–F9: Finger site (thumb through fifth digit, right/left).
+* T1–T9, TA/T5: Toe site (great toe through fifth digit, right/left).
+* LC, LD, LM, RC, RI: Coronary artery site (left circumflex, LAD, left main, right coronary, ramus intermedius).
+
+Anesthesia
+* 23 - Unusual Anesthesia: General anesthesia used when not typical.
+* 47 - Surgeon Provided Anesthesia: Operating surgeon administers anesthesia.
+* P1–P6: Anesthesia risk status (healthy → brain-dead donor).
+
+E/M & Postoperative Care
+* 24 - Unrelated E/M During Postop: Visit unrelated to recent surgery.
+* 25 - Significant E/M Same Day as Procedure: Separate E/M beyond usual peri-procedural care.
+* 27 - Multiple Outpatient Encounters Same Day: Hospital-only; distinct visits in different departments.
+* 57 - E/M Resulting in Major Surgery Decision: Visit led to decision for surgery.
+
+Surgical Staging, Changes & Discontinuations
+* 52 - Reduced Services: Procedure partially completed.
+* 53 - Discontinued Procedure: Stopped due to patient safety.
+* 54 - Surgical Care Only: Only performed operation.
+* 55 - Postop Care Only: Only provided recovery/follow-up.
+* 56 - Preop Care Only: Only performed pre-surgical evaluation.
+* 58 - Staged/Planned/More Extensive Procedure: Planned or expanded follow-up surgery.
+* 73/74: Facility-only cancelled/aborted procedures (pre- or post-anesthesia).
+
+Repeat & Related Procedures
+* 76 - Repeat Procedure by Same Physician: Same provider repeats service same day.
+* 77 - Repeat Procedure by Another Physician: Different provider repeats service same day.
+* 78 - Unplanned Return to OR for Related Procedure: Postop complication requires reoperation.
+* 79 - Unrelated Procedure During Postop Period: New, unrelated surgery in postop window.
+* 59 - Distinct Procedure/Service: Separate service not normally billed with another.
+
+Special Circumstances
+* 22 - Increased Procedural Service: Unusually difficult or time-intensive service.
+* 32 - Mandated Services: Service required by third party.
+* 33 - Preventive Service: Preventive care per USPSTF or mandate.
+* 63 - Procedure on Infant ≤4kg: Extra work for neonates.
+* 99 - Multiple Modifiers: More than one modifier applies.
+
+Lab & Diagnostic
+* 26 - Professional Component Only: Interpretation only, not technical work.
+* 90 - Outside Lab: Specimen sent to reference lab.
+* 91 - Repeat Lab Test: Same test repeated same day.
+* 92 - Lab Using Kit/Disposable Device: Test done with single-use kit.
+* GG/GH: Mammography (screening + diagnostic same day, or converted).
+
+Telehealth
+* 93 - Audio-Only Telehealth: Real-time telephone visit.
+* 95 - Audio + Video Telehealth: Real-time interactive video visit.
+
+Therapy
+* 96 - Habilitative Service: Helps patient learn new skill.
+* 97 - Rehabilitative Service: Helps patient regain lost function.
+
+Performance/Quality Reporting (Category II)
+* 1P: Excluded due to medical reason.
+* 2P: Excluded due to patient reason.
+* 3P: Excluded due to system reason.
+* 8P: Not performed, reason unspecified.
+
+Ambulance
+* QM - Ambulance Under Arrangement: Service arranged by another provider.
+* QN - Ambulance Furnished Directly: Service provided directly by facility.

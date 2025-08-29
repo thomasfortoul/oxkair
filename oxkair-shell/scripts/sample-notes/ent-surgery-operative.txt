@@ -1,0 +1,29 @@
+OPERATIVE NOTE
+
+Patient Name: Emily Johnson     MRN: 246801     DOB: 11/08/1973
+Date of Surgery: 05/20/2025    Time: 09:12 AM
+Surgeon: Dr. Amir Patel     Assistant: Dr. Jennifer Kim (PGY-3 Resident)
+Anesthesia: General Endotracheal
+
+Pre-op Diagnosis: Chronic rhinosinusitis with nasal polyps, bilateral (ICD-10 J32.4, J33.0)
+Post-op Diagnosis: Same
+
+Procedures Performed:
+1. Functional Endoscopic Sinus Surgery (FESS), including:
+   a. Bilateral total ethmoidectomy
+   b. Right maxillary antrostomy
+   c. Left frontal sinusotomy
+   d. Bilateral nasal polypectomy
+2. Placement of absorbable nasal packing (MeroGel, 2 units, 1 per side)
+3. Application of Surgicel (oxidized regenerated cellulose, 3 strips for hemostasis)
+
+Indication: Refractory symptoms of sinusitis and nasal obstruction, unresponsive to maximal medical therapy.
+
+Findings: Diffuse polyposis, edematous mucosa, purulent drainage, polypoid tissue obstructing all sinuses involved.
+
+Description of Procedure:
+After induction, the patient was prepped and draped in usual sterile fashion. Using a 0-degree endoscope, the nasal cavity was evaluated. Polypoid tissue was removed from bilateral nasal passages. Total ethmoidectomy performed bilaterally with careful dissection. Right maxillary antrostomy and left frontal sinusotomy completed. Hemostasis achieved with Surgicel (3 strips total). MeroGel absorbable packing placed, one unit per nostril. All tissue sent to pathology. Dr. Kim (resident) participated under direct supervision for the entirety of the procedure, including all critical steps. No intraoperative complications.
+
+Disposition: Patient to PACU in stable condition.
+
+Attestation: Resident (Dr. Kim) involved throughout; attending present for all key portions and final closure.

@@ -1,0 +1,92 @@
+{
+  "caseMeta": {
+    "caseId": "CASE-001",
+    "patientId": "PATIENT-001",
+    "providerId": "PROVIDER-001",
+    "dateOfService": "2025-07-08T20:06:21Z",
+    "claimType": "primary",
+    "status": "completed"
+  },
+  "procedureCodes": [
+    {
+      "code": "47562",
+      "description": "Laparoscopic cholecystectomy",
+      "isPrimary": true,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Procedure performed",
+        "excerpt": "Procedure: Laparoscopic cholecystectomy"
+      },
+      "rvu": 0.0,
+      "allowedModifiers": [],
+      "sourceNoteType": "operative_notes"
+    }
+  ],
+  "diagnosisCodes": [
+    {
+      "code": "K80.00",
+      "description": "Symptomatic cholelithiasis with acute cholecystitis",
+      "isPrimary": true,
+      "evidence": {
+        "description": "Preoperative diagnosis",
+        "excerpt": "Preoperative Diagnosis: Symptomatic cholelithiasis with acute cholecystitis"
+      },
+      "laterality": "N/A",
+      "includes": [],
+      "excludes": [],
+      "sourceNoteType": "operative_notes"
+    },
+    {
+      "code": "K80.10",
+      "description": "Chronic cholecystitis with cholelithiasis",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Postoperative diagnosis",
+        "excerpt": "Postoperative Diagnosis: Chronic cholecystitis with cholelithiasis"
+      },
+      "laterality": "N/A",
+      "includes": [],
+      "excludes": [],
+      "sourceNoteType": "operative_notes"
+    }
+  ],
+  "modifierSuggestions": [],
+  "complianceIssues": [],
+  "rvuSequencing": null,
+  "demographics": {
+    "patientName": "Mary S.",
+    "patientMRN": "Unknown",
+    "patientDOB": "1973-01-01",
+    "gender": "Female",
+    "attendingPhysician": "Unknown",
+    "providerSpecialty": "General Surgery",
+    "npi": "Unknown",
+    "facilityName": "Unknown"
+  },
+  "encounter": {
+    "serviceDate": "2025-07-08",
+    "admissionDate": "2025-07-08",
+    "dischargeDate": "2025-07-08",
+    "visitType": "Inpatient Surgery",
+    "encounterDate": "2025-07-08",
+    "encounterTime": "00:00",
+    "anesthesiaType": "General anesthesia"
+  },
+  "caseNotes": {
+    "primaryNoteText": "Operative Note 2 – Simple Case with Clear Diagnoses and Procedures\nPatient: Mary S., 52-year-old female\nPreoperative Diagnosis: Symptomatic cholelithiasis with acute cholecystitis\nPostoperative Diagnosis: Chronic cholecystitis with cholelithiasis\nProcedure: Laparoscopic cholecystectomy\nAnesthesia: General anesthesia\n\nOperative Details:\nThe patient was positioned supine on the operating table after standard preoperative preparation and induction of general anesthesia. A four-port laparoscopic cholecystectomy was performed. On entry, the gallbladder was noted to be distended, with a thickened wall and multiple cholesterol stones. The cystic duct and cystic artery were identified using the critical view of safety. The cystic duct was clipped and divided, and the cystic artery was ligated and transected. Dissection continued along the gallbladder bed, which was carefully separated from the liver. There was no evidence of bile leak or active hemorrhage. The gallbladder was placed in an extraction bag and removed through the umbilical port. Hemostasis was achieved, and the ports were closed with absorbable sutures. The patient emerged from anesthesia without complications and was scheduled for standard postoperative follow-up.",
+    "additionalNotes": []
+  },
+  "allEvidence": [],
+  "finalModifiers": [],
+  "claimSequence": null,
+  "currentStep": "code_extraction",
+  "completedSteps": [
+    "initialization",
+    "note_parsing"
+  ],
+  "errors": [],
+  "history": [],
+  "createdAt": "2025-07-08T20:06:21Z",
+  "updatedAt": "2025-07-08T20:06:21Z",
+  "version": "1.0.0"
+}

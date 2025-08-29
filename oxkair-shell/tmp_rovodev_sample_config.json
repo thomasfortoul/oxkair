@@ -1,0 +1,15 @@
+{
+  "mrn": "123456789",
+  "dateOfService": "2024-01-15",
+  "insuranceProvider": "Medicare",
+  "patientName": "John Doe",
+  "providerName": "Dr. Smith",
+  "department": "Surgery",
+  "team": "General Surgery",
+  "userRole": "coder",
+  "priorityLevel": "normal",
+  "enableDetailedLogging": true,
+  "billableNotes": [
+    "operative_notes"
+  ]
+}

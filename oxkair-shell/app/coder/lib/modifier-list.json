@@ -1,0 +1,1094 @@
+[
+  {
+    "22": {
+      "description": "Used when the work required to provide a service is substantially greater than typically required due to factors like increased intensity, time, technical difficulty, patient condition severity, or the physical and mental effort involved.",
+      "phrases": [
+        "procedure complicated by extensive adhesions",
+        "unexpectedly difficult dissection due to scar tissue",
+        "prolonged operative time due to morbid obesity",
+        "significant bleeding requiring extensive control measures"
+      ],
+      "note": "This modifier should not be appended to an E/M service.",
+      "guidance": "Append this modifier to a procedure code when the service performed was significantly more complex or time-consuming than usual. Your documentation must provide a detailed explanation of *why* the work was substantially greater. For example, simply stating the procedure took longer is insufficient; you must document the specific reason, such as managing extensive scar tissue from a prior surgery or dealing with anomalous anatomy that complicated the procedure. It is not for use with Evaluation and Management (E/M) services."
+    }
+  },
+  {
+    "23": {
+      "description": "Applies to a procedure that usually requires no anesthesia or only local anesthesia but, due to unusual circumstances, was performed under general anesthesia.",
+      "phrases": [
+        "patient unable to cooperate for procedure",
+        "general anesthesia required due to extreme patient anxiety",
+        "procedure converted to general anesthesia due to patient movement",
+        "developmentally delayed patient requiring sedation for safety"
+      ],
+      "note": "",
+      "guidance": "Use this modifier on the primary service code (not an anesthesia code) when general anesthesia is necessary for a procedure that typically doesn't require it. This is reserved for special situations where the patient's condition—such as extreme anxiety, developmental disability, or dementia—prevents the safe and effective performance of the procedure without general anesthesia."
+    }
+  },
+  {
+    "24": {
+      "description": "Indicates that an Evaluation and Management (E/M) service was performed by the same physician or qualified provider during a postoperative period, but for a reason completely unrelated to the original procedure.",
+      "phrases": [
+        "patient seen for new onset of cough and fever",
+        "evaluated for right ankle pain after a fall",
+        "follow-up for chronic diabetes management",
+        "developed an unrelated skin rash"
+      ],
+      "note": "",
+      "guidance": "Append this modifier to an E/M service code when a patient is in a global surgical period (typically 10 or 90 days post-op) and seeks treatment for a new or separate problem. For instance, if a patient who had knee surgery last month comes in for a sinus infection, the E/M service for the sinus infection would get modifier 24 to show it's separate from the knee surgery's global care."
+    }
+  },
+  {
+    "25": {
+      "description": "Indicates that on the same day a procedure was performed, the patient's condition required a significant, separately identifiable E/M service that went above and beyond the usual preoperative and postoperative care associated with the procedure.",
+      "phrases": [
+        "addressed patient's worsening asthma symptoms",
+        "managed unstable hypertension during visit",
+        "evaluated new complaint of chest pain",
+        "counseled on new diagnosis of diabetes"
+      ],
+      "note": "This modifier is not used to report an E/M service that resulted in a decision to perform surgery. See modifier 57. For significant, separately identifiable non-E/M services, see modifier 59.",
+      "guidance": "Use this modifier on an E/M code when a distinct evaluation and management service is provided on the same day as a minor procedure (with a 0 or 10-day global period). The documentation must clearly support both the procedure and a separate E/M service. For example, if a patient comes in for a scheduled wart removal but also has their complex hypertension medication adjusted, the E/M service can be billed with modifier 25. A different diagnosis is not required."
+    }
+  },
+  {
+    "26": {
+      "description": "Used to report the professional component (the physician's interpretation and report) of a procedure that has both a professional and a technical component.",
+      "phrases": [
+        "interpretation of MRI of the brain",
+        "radiology report reviewed and signed",
+        "pathology slides reviewed and interpreted",
+        "professional reading of an EKG"
+      ],
+      "note": "",
+      "guidance": "This modifier is used when a provider interprets the results of a diagnostic test but does not own the equipment or employ the staff who performed the technical part of the test. A common example is a radiologist interpreting an X-ray performed at a hospital. The radiologist bills for the interpretation (professional component) with modifier 26, while the hospital bills for the use of the machine and the technician's work (technical component, or TC)."
+    }
+  },
+  {
+    "27": {
+      "description": "For hospital outpatient reporting, this modifier indicates that a patient had multiple, separate, and distinct E/M encounters in different outpatient hospital settings on the same date.",
+      "phrases": [
+        "patient seen in cardiology clinic this AM",
+        "later presented to the ED with chest pain",
+        "distinct encounter in the wound care clinic",
+        "separate visit to the hospital's urgent care"
+      ],
+      "note": "This modifier is not to be used for physician reporting of multiple E/M services performed by the same physician on the same date. For physician reporting of all outpatient evaluation and management services provided by the same physician on the same date and performed in multiple outpatient setting(s) (eg, hospital emergency department, clinic), see Evaluation and Management, Emergency Department, or Preventive Medicine Services codes.",
+      "guidance": "This is a **hospital-only modifier**, not for physician use. A hospital would append this to E/M codes to report that a patient received services in more than one of its outpatient departments on the same day (e.g., a visit to a hospital-based primary care clinic in the morning and a trip to that same hospital's emergency room in the evening). It signifies two distinct uses of hospital outpatient resources."
+    }
+  },
+  {
+    "32": {
+      "description": "Indicates that services were performed because they were mandated by a third party, such as an insurance company, government agency, or other legislative or regulatory body.",
+      "phrases": [
+        "second opinion requested by insurer",
+        "pre-employment physical exam",
+        "workers' compensation evaluation",
+        "consultation mandated by third-party payer"
+      ],
+      "note": "",
+      "guidance": "Apply this modifier to a service code when the service was not initiated by the patient or the treating provider but was instead required by an external entity. Common examples include second opinions required by an insurance carrier before approving a surgery, or evaluations mandated by a workers' compensation program."
+    }
+  },
+  {
+    "33": {
+      "description": "Identifies a service that was provided as a preventive service in accordance with a U.S. Preventive Services Task Force (USPSTF) A or B rating or other preventive service mandates.",
+      "phrases": [
+        "screening colonoscopy, no findings",
+        "routine preventive mammogram",
+        "counseling for smoking cessation as preventive care",
+        "screening for depression"
+      ],
+      "note": "For separately reported services specifically identified as preventive, the modifier should not be used.",
+      "guidance": "This modifier is used to signal to payers that a service, which could be diagnostic in other situations, was performed for preventive reasons. Under the Affordable Care Act, this often means the patient will not have to pay a copay or deductible. For example, a colonoscopy is diagnostic if a patient has symptoms, but it is preventive if performed for routine screening. Append modifier 33 to the colonoscopy code in the screening scenario. Do not use it on codes that are already explicitly preventive (e.g., 'annual physical')."
+    }
+  },
+  {
+    "47": {
+      "description": "Indicates that the surgeon also provided regional or general anesthesia for the surgical procedure.",
+      "phrases": [
+        "surgeon administered spinal block",
+        "regional anesthesia provided by operating surgeon",
+        "axillary block performed by surgeon",
+        "general anesthesia managed by surgeon"
+      ],
+      "note": "This does not include local anesthesia. Modifier 47 would not be used as a modifier for the anesthesia procedures.",
+      "guidance": "This modifier is used in the rare circumstance that the surgeon performing a procedure also administers the regional or general anesthesia. It should be appended to the surgical CPT code, not to an anesthesia code. It specifically excludes local anesthesia, which is considered part of the standard surgical package."
+    }
+  },
+  {
+    "50": {
+      "description": "Used to identify bilateral procedures that are performed during the same operative session but are not already defined as bilateral in their code description.",
+      "phrases": [
+        "bilateral knee arthroscopy",
+        "carpal tunnel release on both wrists",
+        "procedure performed on left and right ears",
+        "bilateral cataract surgery"
+      ],
+      "note": "This modifier should not be appended to designated “add-on” codes (see Appendix D).",
+      "guidance": "Apply this modifier to a procedure code when the same procedure is performed on both sides of the body (e.g., both knees, both eyes, both hands). Payer policies may vary; some prefer a single line item with modifier 50, while others may prefer two separate line items with RT (right) and LT (left) modifiers. Do not use on codes that are inherently bilateral or on add-on codes."
+    }
+  },
+  {
+    "51": {
+      "description": "Indicates that multiple procedures (other than E/M services, Physical Medicine and Rehabilitation services, or provision of supplies) were performed by the same individual during the same session.",
+      "phrases": [
+        "followed by a second procedure",
+        "in the same operative session, also performed...",
+        "cholecystectomy and hernia repair performed",
+        "multiple lesion removals"
+      ],
+      "note": "This modifier should not be appended to designated “add-on” codes (see Appendix D).",
+      "guidance": "When two or more distinct procedures are performed at the same encounter, list the primary (most resource-intensive) procedure first without a modifier. Append modifier 51 to the CPT codes for the second and any subsequent procedures. This typically alerts the payer to apply a multiple-procedure payment reduction. It should not be used with add-on codes (which are exempt from this reduction)."
+    }
+  },
+  {
+    "52": {
+      "description": "Indicates that a service or procedure was partially reduced or eliminated at the discretion of the physician or another qualified health care professional.",
+      "phrases": [
+        "procedure terminated early due to poor visualization",
+        "unable to complete the full procedure",
+        "colonoscopy to the transverse colon only",
+        "only a portion of the planned skin graft was placed"
+      ],
+      "note": "For hospital outpatient reporting of a previously scheduled procedure/service that is partially reduced or cancelled as a result of extenuating circumstances or those that threaten the well-being of the patient prior to or after administration of anesthesia, see modifiers 73 and 74 (see modifiers approved for ASC hospital outpatient use).",
+      "guidance": "Use this modifier when a procedure as described by a CPT code is not fully completed. For example, if a provider attempts a colonoscopy but can only advance the scope partially due to patient anatomy or poor prep, modifier 52 would be appended to the colonoscopy code to indicate the reduced service. Documentation should explain what portion of the service was performed."
+    }
+  },
+  {
+    "53": {
+      "description": "Indicates that a physician or other qualified health care professional elected to terminate a surgical or diagnostic procedure due to extenuating circumstances or those that threaten the well-being of the patient.",
+      "phrases": [
+        "procedure aborted due to hemodynamic instability",
+        "terminated due to severe cardiac arrhythmia",
+        "discontinued due to precipitous drop in blood pressure",
+        "operation stopped due to unexpected, life-threatening finding"
+      ],
+      "note": "This modifier is not used to report the elective cancellation of a procedure prior to the patient’s anesthesia induction and/or surgical preparation in the operating suite. For outpatient hospital/ambulatory surgery center (ASC) reporting of a previously scheduled procedure/service that is partially reduced or cancelled as a result of extenuating circumstances or those that threaten the well being of the patient prior to or after administration of anesthesia, see modifiers 73 and 74 (see modifiers approved for ASC hospital outpatient use).",
+      "guidance": "This modifier is used by the **physician** when a procedure is stopped after it has started (typically after anesthesia is induced) for the patient's safety. It signifies that the intended procedure was initiated but not completed due to a sudden, adverse event, such as a severe allergic reaction or cardiac event."
+    }
+  },
+  {
+    "54": {
+      "description": "Used when one physician or other qualified health care professional performs only the surgical procedure, and another provides the preoperative and/or postoperative management.",
+      "phrases": [
+        "intraoperative care only",
+        "surgical procedure performed, patient to follow up with PCP",
+        "transferring postoperative care to local physician",
+        "performed surgery only"
+      ],
+      "note": "",
+      "guidance": "This modifier is used to bill for just the intraoperative portion of a global surgical package. It is used when providers split care, such as when a surgeon operates on a patient who is visiting from out of town and will receive their post-op care from their doctor back home."
+    }
+  },
+  {
+    "55": {
+      "description": "Used when one physician or other qualified health care professional provides only the postoperative management after another provider performed the surgical procedure.",
+      "phrases": [
+        "assumed postoperative care",
+        "managing patient after surgery by Dr. X",
+        "post-op follow-up only",
+        "inpatient post-surgical management"
+      ],
+      "note": "",
+      "guidance": "This modifier is used to bill for only the post-op care portion of a global surgical package. This occurs when a patient is transferred to a different provider or facility for recovery and follow-up after their surgery was performed by someone else. The surgeon would bill with modifier 54, and the provider managing the recovery would bill the same surgical code with modifier 55."
+    }
+  },
+  {
+    "56": {
+      "description": "Used when one physician or other qualified health care professional performs only the preoperative care and evaluation, and another provider performs the surgical procedure.",
+      "phrases": [
+        "preoperative clearance for surgery",
+        "pre-op H&P and evaluation only",
+        "assessed patient for surgical risk",
+        "preoperative care provided"
+      ],
+      "note": "",
+      "guidance": "This modifier is used to bill for only the pre-op care component of a global surgical package. While not used as frequently as 54 and 55, it applies when one provider performs the pre-surgical workup (history, physical, decision-making) and then transfers the patient to another provider for the actual surgery."
+    }
+  },
+  {
+    "57": {
+      "description": "Identifies an Evaluation and Management (E/M) service that resulted in the initial decision to perform a major surgery.",
+      "phrases": [
+        "decision made to proceed with emergent appendectomy",
+        "discussed risks/benefits, proceeding to OR",
+        "patient consented for major surgery today",
+        "scheduled for urgent surgery following consultation"
+      ],
+      "note": "",
+      "guidance": "Append this modifier to the E/M service code (e.g., office visit, ER visit) that took place on the day of or the day before a **major surgery** (one with a 90-day global period). It signifies that the work of the E/M visit was to determine the need for the surgery, which allows that visit to be paid separately from the surgical package."
+    }
+  },
+  {
+    "58": {
+      "description": "Indicates that a procedure or service performed during the postoperative period was: (a) planned or anticipated (staged); (b) more extensive than the original procedure; or (c) for therapy following a surgical procedure.",
+      "phrases": [
+        "planned return to OR for second look",
+        "staged reconstruction procedure",
+        "patient brought back for definitive wound closure",
+        "more extensive debridement required after initial surgery"
+      ],
+      "note": "For treatment of a problem that requires a return to the operating/procedure room (eg, unanticipated clinical condition), see modifier 78.",
+      "guidance": "Use this modifier when a subsequent procedure during a global period was planned from the outset. This could be a multi-part surgery where the steps are intentionally spread out (staged), a return to the OR for a planned 'second look', or a situation where the initial surgery revealed the need for a more extensive follow-up procedure. Using this modifier starts a new global period."
+    }
+  },
+  {
+    "59": {
+      "description": "Indicates that a procedure or service was distinct or independent from other non-E/M services performed on the same day. It is used to identify procedures that are not normally reported together but are appropriate under the circumstances.",
+      "phrases": [
+        "biopsy of a lesion on a separate anatomical site",
+        "procedure performed on the contralateral limb",
+        "distinct procedure performed later in the day",
+        "separate incision for a different procedure"
+      ],
+      "note": "Modifier 59 should not be appended to an E/M service. To report a separate and distinct E/M service with a non-E/M service performed on the same date, see modifier 25.",
+      "guidance": "This is a modifier of 'last resort' to bypass a National Correct Coding Initiative (NCCI) edit when two procedures are normally bundled. Documentation must clearly support that the services were truly separate (e.g., different session, different anatomical site, separate injury). If a more specific modifier is available (e.g., RT/LT for different sides, or the 'X' modifiers - XE, XS, XP, XU), it should be used instead of 59."
+    }
+  },
+  {
+    "62": {
+      "description": "Indicates that two surgeons worked together as primary surgeons, each performing a distinct part of a single, complex procedure.",
+      "phrases": [
+        "co-surgery with Dr. Smith",
+        "neurosurgical and orthopedic teams worked concurrently",
+        "distinct portions of the procedure performed by two primary surgeons",
+        "cardiothoracic surgeon performed the vascular portion"
+      ],
+      "note": "If a co-surgeon acts as an assistant in the performance of additional procedure(s), other than those reported with the modifier 62, during the same surgical session, those services may be reported using separate procedure code(s) with modifier 80 or modifier 82 added, as appropriate.",
+      "guidance": "Used for highly complex procedures that require the expertise of two primary surgeons, often from different specialties, working together at the same time. Each surgeon reports the same CPT code with modifier 62 and must dictate an operative report detailing their specific contribution to the procedure."
+    }
+  },
+  {
+    "63": {
+      "description": "Indicates that a procedure performed on a neonate or infant with a present body weight of up to 4 kg involved significantly increased complexity and physician work.",
+      "phrases": [
+        "procedure on a 3 kg neonate",
+        "patient is a premature infant, weight 2.5 kg",
+        "newborn with complex congenital anomaly",
+        "operative procedure on a low-birth-weight infant"
+      ],
+      "note": "Unless otherwise designated, this modifier may only be appended to procedures/services listed in the 20100-69990 code series and 92920, 92928, 92953, 92960, 92986, 92987, 92990, 92997, 92998, 93312, 93313, 93314, 93315, 93316, 93317, 93318, 93452, 93505, 93563, 93564, 93568, 93569, 93573, 93574, 93575, 93580, 93581, 93582, 93590, 93591, 93592, 93593, 93594, 93595, 93596, 93597, 93598, 93615, 93616 from the Medicine/Cardiovascular section. Modifier 63 should not be appended to any CPT codes listed in the Evaluation and Management Services, Anesthesia, Radiology, Pathology and Laboratory, or Medicine sections (other than those identified above from the Medicine/Cardiovascular section).",
+      "guidance": "This modifier is added to specific surgical and cardiovascular procedure codes to account for the increased difficulty, time, and intensity required when operating on very small infants (up to 4 kg, or about 8.8 lbs). You must check the CPT manual to ensure the specific procedure code is eligible for use with this modifier."
+    }
+  },
+  {
+    "66": {
+      "description": "Indicates that a highly complex procedure was carried out by a surgical team, which requires the concomitant services of several physicians, often of different specialties, and other highly skilled personnel.",
+      "phrases": [
+        "surgical team approach utilized",
+        "multi-disciplinary surgical team",
+        "liver transplant team procedure",
+        "complex craniofacial reconstruction team"
+      ],
+      "note": "",
+      "guidance": "This modifier is reserved for exceptionally complex procedures that require a team of surgeons, such as organ transplants. It is a step beyond co-surgeons (modifier 62). Each physician member of the team reports the primary procedure code with modifier 66."
+    }
+  },
+  {
+    "73": {
+      "description": "For outpatient hospital/ASC use, this indicates a surgical or diagnostic procedure was cancelled subsequent to the patient's surgical preparation but prior to the administration of anesthesia.",
+      "phrases": [
+        "case cancelled in pre-op holding area",
+        "patient developed fever prior to anesthesia",
+        "procedure cancelled after sedation given, but before block",
+        "patient became unstable after being taken to the OR"
+      ],
+      "note": "The elective cancellation of a service prior to the administration of anesthesia and/or surgical preparation of the patient should not be reported. For physician reporting of a discontinued procedure, see modifier 53.",
+      "guidance": "This is a **facility-only modifier** (for hospitals and Ambulatory Surgery Centers), not for physician use. It reports that the resources for a procedure were prepared and the patient was readied for surgery, but the case was cancelled for a medical reason before anesthesia (local, regional, or general) was administered. It is the facility equivalent to modifier 53 for a pre-anesthesia cancellation."
+    }
+  },
+  {
+    "74": {
+      "description": "For outpatient hospital/ASC use, this indicates a surgical or diagnostic procedure was terminated after the administration of anesthesia or after the procedure was started.",
+      "phrases": [
+        "procedure stopped after incision was made",
+        "terminated after patient was put under general anesthesia",
+        "aborted post-intubation due to arrhythmia",
+        "scope insertion started, but procedure discontinued"
+      ],
+      "note": "The elective cancellation of a service prior to the administration of anesthesia and/or surgical preparation of the patient should not be reported. For physician reporting of a discontinued procedure, see modifier 53.",
+      "guidance": "This is a **facility-only modifier**, not for physician use. It reports that a procedure was started (either anesthesia was given or an incision/scope insertion was made) but was stopped due to a threatening event for the patient. It allows the facility to bill for the resources used up to the point of termination. It is the facility equivalent of modifier 53."
+    }
+  },
+  {
+    "76": {
+      "description": "Indicates that a procedure or service was repeated by the same physician or other qualified health care professional subsequent to the original procedure or service.",
+      "phrases": [
+        "repeat chest x-ray performed later today",
+        "second EKG obtained to check for changes",
+        "re-debridement of the same wound on the same day",
+        "serial radiographs of the fracture"
+      ],
+      "note": "This modifier should not be appended to an E/M service.",
+      "guidance": "Use this modifier to report that the exact same procedure was performed more than once on the same day by the same provider. This tells the payer that the second charge is not a duplicate bill but a medically necessary repeat of the service. For example, if a chest x-ray is taken in the morning and another is needed in the afternoon to assess a change in condition."
+    }
+  },
+  {
+    "77": {
+      "description": "Indicates that a basic procedure or service was repeated by another physician or other qualified health care professional subsequent to the original procedure or service.",
+      "phrases": [
+        "repeat imaging ordered by consulting physician",
+        "procedure was repeated by Dr. Jones later today",
+        "second interpretation by another radiologist",
+        "patient had another EKG in the ICU by a different service"
+      ],
+      "note": "This modifier should not be appended to an E/M service.",
+      "guidance": "This modifier is similar to modifier 76, but it is used when a different provider repeats the procedure on the same day. For example, an emergency room doctor orders an EKG, and a few hours later, the admitting cardiologist orders another EKG to be performed and interpreted. The cardiologist's claim for the EKG would use modifier 77."
+    }
+  },
+  {
+    "78": {
+      "description": "Indicates an unplanned return to the operating/procedure room by the same physician for a procedure that is related to the initial procedure and occurs during the postoperative period.",
+      "phrases": [
+        "return to OR for washout of surgical site infection",
+        "taken back for control of postoperative hemorrhage",
+        "unplanned re-operation for wound dehiscence",
+        "evacuation of a postoperative hematoma"
+      ],
+      "note": "For repeat procedures, see modifier 76.",
+      "guidance": "Use this modifier for a second, unplanned procedure that is necessary to treat a complication of the first surgery (e.g., bleeding, infection). The patient must return to an operating or procedure room, and the procedure must occur during the global period of the initial surgery. This does not start a new global period."
+    }
+  },
+  {
+    "79": {
+      "description": "Indicates that a procedure or service performed by the same individual during the postoperative period was unrelated to the original procedure.",
+      "phrases": [
+        "patient now presents with an unrelated condition",
+        "new problem requiring surgery",
+        "appendectomy performed during post-op for a hip fracture",
+        "mole excision performed during follow-up for knee surgery"
+      ],
+      "note": "For repeat procedures on the same day, see modifier 76.",
+      "guidance": "Apply this modifier to a procedure code when a patient in a global period for one surgery needs another, completely unrelated surgery from the same provider. For instance, if a surgeon performs a hernia repair on a patient who is still in the global period for a prior knee replacement performed by that same surgeon. Using this modifier starts a new, separate global period for the new procedure."
+    }
+  },
+  {
+    "80": {
+      "description": "Indicates that surgical assistant services were provided.",
+      "phrases": [
+        "assisted Dr. Smith with the procedure",
+        "provided surgical assistance",
+        "functioned as first assistant during the case",
+        "assistant surgeon present and participating"
+      ],
+      "note": "",
+      "guidance": "This modifier is used by a physician, nurse practitioner, or physician assistant who actively assists the primary surgeon during a surgical procedure. It is appended to the surgical CPT code(s) on the assistant's claim."
+    }
+  },
+  {
+    "81": {
+      "description": "Indicates that minimum surgical assistant services were provided.",
+      "phrases": [
+        "provided minimal surgical assistance",
+        "briefly assisted with a portion of the procedure",
+        "minor assistance provided",
+        "limited role as assistant surgeon"
+      ],
+      "note": "",
+      "guidance": "This modifier is used for situations where an assistant surgeon's role was more limited than usual. Its use is uncommon and highly dependent on payer policies."
+    }
+  },
+  {
+    "82": {
+      "description": "Indicates that surgical assistant services were provided when a qualified resident surgeon was not available.",
+      "phrases": [
+        "no qualified resident available for this case",
+        "assisted in surgery, resident unavailable",
+        "teaching hospital, no resident on service",
+        "provided assistant services in lieu of resident"
+      ],
+      "note": "The unavailability of a qualified resident surgeon is a prerequisite for use of modifier 82 appended to the usual procedure code number(s).",
+      "guidance": "This modifier is specifically for use in a teaching hospital setting. It is appended to the surgical code by an assistant surgeon to indicate they were required because a resident, who would normally have assisted, was not available. Documentation must support the lack of a resident's availability."
+    }
+  },
+  {
+    "90": {
+      "description": "Indicates that laboratory procedures were performed by a party other than the treating or reporting physician or other qualified health care professional.",
+      "phrases": [
+        "specimen sent to Quest Diagnostics",
+        "lab work performed by outside reference lab",
+        "pathology sent out for special stains",
+        "genetic testing sent to external laboratory"
+      ],
+      "note": "",
+      "guidance": "This modifier is used when a physician's office or clinic collects a specimen but sends it to an outside (or 'reference') laboratory for the actual testing. The office bills for the test using the CPT code with modifier 90, effectively billing on behalf of the reference lab. This is often done as a convenience for the patient."
+    }
+  },
+  {
+    "91": {
+      "description": "Indicates that the same clinical diagnostic laboratory test was repeated on the same patient on the same day to obtain subsequent test results.",
+      "phrases": [
+        "serial cardiac enzymes ordered",
+        "repeat potassium level checked at 4 pm",
+        "monitor blood glucose every 2 hours",
+        "subsequent arterial blood gas analysis"
+      ],
+      "note": "This modifier may not be used when tests are rerun to confirm initial results; due to testing problems with specimens or equipment; or for any other reason when a normal, one-time, reportable result is all that is required. This modifier may not be used when other code(s) describe a series of test results (eg, glucose tolerance tests, evocative/suppression testing). This modifier may only be used for laboratory test(s) performed more than once on the same day on the same patient.",
+      "guidance": "Use this modifier on a lab test code when it is medically necessary to run the exact same test multiple times throughout the day to monitor a patient's condition. For example, checking a patient's potassium levels every few hours during treatment for a critical electrolyte imbalance. Do not use it for reruns due to lab error or to simply confirm an initial finding."
+    }
+  },
+  {
+    "92": {
+      "description": "Indicates that laboratory testing was performed using a kit or transportable instrument that consists wholly or in part of a single-use, disposable analytical chamber.",
+      "phrases": [
+        "rapid HIV test performed in office",
+        "point-of-care testing using a disposable kit",
+        "single-use testing chamber utilized",
+        "transportable instrument used for on-site testing"
+      ],
+      "note": "",
+      "guidance": "This modifier is used for specific laboratory tests that are performed using certain types of technology, typically a single-use kit or a portable device (e.g., some rapid HIV tests). The key is the technology (single-use, disposable), not necessarily the location of the test. It is applicable only to a specific list of lab codes."
+    }
+  },
+  {
+    "93": {
+      "description": "Indicates a synchronous telemedicine service was rendered via telephone or other real-time interactive audio-only telecommunications system. The service must be sufficient to meet the requirements of the equivalent face-to-face interaction.",
+      "phrases": [
+        "patient encounter via telephone",
+        "audio-only telehealth visit",
+        "telephonic consultation",
+        "conducted visit over the phone"
+      ],
+      "note": "",
+      "guidance": "Use this modifier for services delivered in real-time using only audio, such as a phone call. The provider must document that the information exchanged was sufficient to meet the requirements of the CPT code being billed. This is used when video capability is not available or not used."
+    }
+  },
+  {
+    "95": {
+      "description": "Indicates a synchronous telemedicine service was rendered via a real-time interactive audio and video telecommunications system. The service must be sufficient to meet the requirements of the equivalent face-to-face interaction.",
+      "phrases": [
+        "telehealth video visit",
+        "seen via secure video conference",
+        "patient encounter on Doxy.me",
+        "virtual face-to-face consultation"
+      ],
+      "note": "Modifier 95 may only be appended to the services listed in Appendix P.",
+      "guidance": "This is the standard modifier for most telehealth visits that include both audio and video. It indicates a real-time, interactive appointment with a patient at a distant site. This modifier can only be appended to a specific list of CPT codes found in Appendix P of the CPT manual, which are services deemed appropriate for delivery via telehealth."
+    }
+  },
+  {
+    "96": {
+      "description": "Indicates a service that may be habilitative or rehabilitative in nature was provided for habilitative purposes, helping an individual learn skills and functions for daily living that they have not yet developed.",
+      "phrases": [
+        "services to develop communication skills",
+        "therapy to learn activities of daily living (ADLs)",
+        "developmental therapy for a child",
+        "teaching a patient to use an assistive device for the first time"
+      ],
+      "note": "",
+      "guidance": "Use this modifier to specify that a therapy service (e.g., physical, occupational, speech) was provided to help a person learn a skill for the first time, rather than regain a lost skill. This is common in treating patients with developmental delays or congenital conditions."
+    }
+  },
+  {
+    "97": {
+      "description": "Indicates a service that may be habilitative or rehabilitative in nature was provided for rehabilitative purposes, helping an individual keep, get back, or improve skills and functioning for daily living that have been lost or impaired.",
+      "phrases": [
+        "post-stroke physical therapy",
+        "rehab to restore range of motion after injury",
+        "gait training after surgery",
+        "cognitive rehabilitation after a traumatic brain injury"
+      ],
+      "note": "",
+      "guidance": "Use this modifier to specify that a therapy service was provided to help a patient recover skills or functions they lost due to illness or injury. For example, physical therapy for a patient learning to walk again after a hip replacement would be a rehabilitative service."
+    }
+  },
+  {
+    "99": {
+      "description": "Indicates that two or more modifiers are necessary to completely delineate a service.",
+      "phrases": [
+        "multiple circumstances apply",
+        "see claim details for additional modifiers",
+        "complex billing scenario requiring multiple modifiers",
+        "additional modifiers listed in narrative"
+      ],
+      "note": "",
+      "guidance": "This modifier's use is dependent on payer-specific guidelines. It is used when a payer's claim processing system cannot accommodate all the necessary modifiers for a service on a single line. In such cases, modifier 99 is placed in the primary modifier field, and the other modifiers are listed elsewhere on the claim form. It is essentially a flag indicating 'there's more to the story.'"
+    }
+  },
+  {
+    "P1": {
+      "description": "Anesthesia Physical Status Modifier: A normal healthy patient.",
+      "phrases": [
+        "no known medical problems",
+        "healthy 30-year-old male",
+        "ASA Class I",
+        "no systemic disease"
+      ],
+      "note": "",
+      "guidance": "This modifier is appended to an anesthesia CPT code to indicate the patient has no underlying systemic diseases and is in good health prior to surgery. This represents the lowest level of anesthesia complexity related to patient health."
+    }
+  },
+  {
+    "P2": {
+      "description": "Anesthesia Physical Status Modifier: A patient with mild systemic disease.",
+      "phrases": [
+        "well-controlled hypertension",
+        "mild, diet-controlled diabetes",
+        "current smoker, no COPD",
+        "ASA Class II"
+      ],
+      "note": "",
+      "guidance": "This modifier is appended to an anesthesia CPT code for a patient who has a mild systemic disease that is well-controlled and does not cause functional limitations, such as controlled hypertension or adult-onset diabetes."
+    }
+  },
+  {
+    "P3": {
+      "description": "Anesthesia Physical Status Modifier: A patient with severe systemic disease.",
+      "phrases": [
+        "poorly controlled diabetes with complications",
+        "history of heart attack >3 months ago",
+        "stable angina",
+        "ASA Class III"
+      ],
+      "note": "",
+      "guidance": "This modifier is appended to an anesthesia CPT code for a patient with a severe systemic disease that causes some functional limitation. The condition is not incapacitating, but it significantly impacts their health (e.g., poorly controlled hypertension, COPD, history of MI)."
+    }
+  },
+  {
+    "P4": {
+      "description": "Anesthesia Physical Status Modifier: A patient with severe systemic disease that is a constant threat to life.",
+      "phrases": [
+        "recent myocardial infarction (<3 months)",
+        "sepsis or septic shock",
+        "end-stage renal disease requiring dialysis",
+        "ASA Class IV"
+      ],
+      "note": "",
+      "guidance": "This modifier is appended to an anesthesia CPT code for a patient with a severe, incapacitating systemic disease that poses a constant threat to their life. Examples include recent MI, ongoing cardiac ischemia, or sepsis."
+    }
+  },
+  {
+    "P5": {
+      "description": "Anesthesia Physical Status Modifier: A moribund patient who is not expected to survive without the operation.",
+      "phrases": [
+        "ruptured abdominal aortic aneurysm",
+        "massive trauma with uncontrolled bleeding",
+        "intracranial bleed with mass effect",
+        "ASA Class V"
+      ],
+      "note": "",
+      "guidance": "This modifier is appended to an anesthesia CPT code for a patient who is near death and is not expected to survive the next 24 hours without surgical intervention. These are typically emergency, life-saving operations."
+    }
+  },
+  {
+    "P6": {
+      "description": "Anesthesia Physical Status Modifier: A declared brain-dead patient whose organs are being removed for donor purposes.",
+      "phrases": [
+        "organ procurement",
+        "brain-dead organ donor",
+        "harvesting of organs for donation",
+        "ASA Class VI"
+      ],
+      "note": "",
+      "guidance": "This modifier is appended to an anesthesia CPT code exclusively for cases where the patient is declared brain-dead and is undergoing a procedure for the purpose of organ donation."
+    }
+  },
+  {
+    "1P": {
+      "description": "Category II modifier — Performance measure exclusion due to medical reasons (e.g., not indicated, contraindicated, other medical reasons).",
+      "phrases": [
+        "not indicated (absence of organ/limb)",
+        "contraindicated due to allergy",
+        "already performed previously",
+        "other documented medical reason"
+      ],
+      "note": "Category II modifiers are only reported with Category II codes and only where the measure allows exclusions.",
+      "guidance": "Use when the service specified by a Category II measure was considered but not provided because of documented medical reasons. Documentation must clearly state the medical rationale tied to the measure's exclusion criteria."
+    }
+  },
+  {
+    "2P": {
+      "description": "Category II modifier — Performance measure exclusion due to patient reasons (e.g., patient declined, socioeconomic/religious reasons, other patient reasons).",
+      "phrases": [
+        "patient declined the service",
+        "religious objection to treatment",
+        "unable to afford or insurance declined",
+        "other patient-specified reason documented"
+      ],
+      "note": "Only used with Category II codes where the measure allows patient-based exclusions.",
+      "guidance": "Append when the patient declines or otherwise refuses the service addressed by a Category II measure and the refusal is documented. Include counseling/offer documentation and the patient’s stated reason when possible."
+    }
+  },
+  {
+    "3P": {
+      "description": "Category II modifier — Performance measure exclusion due to system reasons (e.g., resource not available, payer limitations, other system-attributable reasons).",
+      "phrases": [
+        "service not available at this facility",
+        "insurance/payor coverage limitation",
+        "equipment or staff resources unavailable",
+        "other system-level constraint documented"
+      ],
+      "note": "Only used with Category II codes where system-based exclusions are permitted by the measure.",
+      "guidance": "Use when the healthcare delivery system prevented provision of the service specified by a Category II measure. Document the system barrier (equipment, staffing, authorization, etc.) in the medical record."
+    }
+  },
+  {
+    "8P": {
+      "description": "Category II modifier — Performance measure reporting modifier: action not performed, reason not otherwise specified.",
+      "phrases": [
+        "action not performed — unspecified reason",
+        "service considered but no specific exclusion reason documented",
+        "reported as not performed, reason unknown",
+        "use when no other Category II exclusion applies"
+      ],
+      "note": "Used only with Category II codes when the reason for not performing the action does not fit 1P/2P/3P or is not otherwise specified.",
+      "guidance": "Apply when a Category II measure action was not done and no documented medical, patient, or system reason fits. Prefer documenting a specific reason (1P/2P/3P) when available; use 8P only if no other exclusion modifier applies."
+    }
+  },
+  {
+    "E1": {
+      "description": "Level II (HCPCS) modifier — Upper left eyelid.",
+      "phrases": [
+        "upper left eyelid procedure",
+        "surgery on left upper eyelid",
+        "upper lid left side",
+        "location: left upper eyelid"
+      ],
+      "note": "HCPCS site-specific modifier for eyelid procedures.",
+      "guidance": "Use to identify the specific eyelid location for procedures (upper left). Append to the procedure code per payer policy when selective eyelid identification is required."
+    }
+  },
+  {
+    "E2": {
+      "description": "Level II (HCPCS) modifier — Lower left eyelid.",
+      "phrases": [
+        "lower left eyelid procedure",
+        "surgery on left lower eyelid",
+        "lower lid left side",
+        "location: left lower eyelid"
+      ],
+      "note": "HCPCS site-specific modifier for eyelid procedures.",
+      "guidance": "Append when the procedure specifically involves the lower left eyelid and payer or claim detail requires eyelid-level localization."
+    }
+  },
+  {
+    "E3": {
+      "description": "Level II (HCPCS) modifier — Upper right eyelid.",
+      "phrases": [
+        "upper right eyelid procedure",
+        "surgery on right upper eyelid",
+        "upper lid right side",
+        "location: right upper eyelid"
+      ],
+      "note": "HCPCS site-specific modifier for eyelid procedures.",
+      "guidance": "Use to designate the right upper eyelid as the procedural site when reporting the service."
+    }
+  },
+  {
+    "E4": {
+      "description": "Level II (HCPCS) modifier — Lower right eyelid.",
+      "phrases": [
+        "lower right eyelid procedure",
+        "surgery on right lower eyelid",
+        "lower lid right side",
+        "location: right lower eyelid"
+      ],
+      "note": "HCPCS site-specific modifier for eyelid procedures.",
+      "guidance": "Append when reporting a procedure specific to the lower right eyelid."
+    }
+  },
+  {
+    "FA": {
+      "description": "Level II (HCPCS) modifier — Left hand, thumb.",
+      "phrases": [
+        "left thumb procedure",
+        "thumb (left) treated",
+        "left first digit hand",
+        "site: left hand thumb"
+      ],
+      "note": "One of the digit/site modifiers for hand procedures.",
+      "guidance": "Use to specify the left thumb as the procedure site when billing CPT/HCPCS codes that permit site modifiers."
+    }
+  },
+  {
+    "F1": {
+      "description": "Level II (HCPCS) modifier — Left hand, second digit (index finger).",
+      "phrases": [
+        "left index finger procedure",
+        "left hand second digit",
+        "index finger (left) treated",
+        "site: left hand second digit"
+      ],
+      "note": "Hand/digit site modifier.",
+      "guidance": "Append to identify the left second digit when the claim requires digit-level specification."
+    }
+  },
+  {
+    "F2": {
+      "description": "Level II (HCPCS) modifier — Left hand, third digit (middle finger).",
+      "phrases": [
+        "left middle finger procedure",
+        "left hand third digit",
+        "middle finger (left) treated",
+        "site: left hand third digit"
+      ],
+      "note": "Hand/digit site modifier.",
+      "guidance": "Use on procedures involving the left third digit when payer/site identification is needed."
+    }
+  },
+  {
+    "F3": {
+      "description": "Level II (HCPCS) modifier — Left hand, fourth digit (ring finger).",
+      "phrases": [
+        "left ring finger procedure",
+        "left hand fourth digit",
+        "ring finger (left) treated",
+        "site: left hand fourth digit"
+      ],
+      "note": "Hand/digit site modifier.",
+      "guidance": "Append when the left fourth digit is the specific site of service."
+    }
+  },
+  {
+    "F4": {
+      "description": "Level II (HCPCS) modifier — Left hand, fifth digit (small finger).",
+      "phrases": [
+        "left small finger procedure",
+        "left hand fifth digit",
+        "small finger (left) treated",
+        "site: left hand fifth digit"
+      ],
+      "note": "Hand/digit site modifier.",
+      "guidance": "Use to indicate the left fifth digit as the procedure site."
+    }
+  },
+  {
+    "F5": {
+      "description": "Level II (HCPCS) modifier — Right hand, thumb.",
+      "phrases": [
+        "right thumb procedure",
+        "thumb (right) treated",
+        "right first digit hand",
+        "site: right hand thumb"
+      ],
+      "note": "Hand/digit site modifier.",
+      "guidance": "Append to denote the right thumb as the site when reporting the service."
+    }
+  },
+  {
+    "F6": {
+      "description": "Level II (HCPCS) modifier — Right hand, second digit (index finger).",
+      "phrases": [
+        "right index finger procedure",
+        "right hand second digit",
+        "index finger (right) treated",
+        "site: right hand second digit"
+      ],
+      "note": "Hand/digit site modifier.",
+      "guidance": "Use to indicate the right second digit as the procedural site."
+    }
+  },
+  {
+    "F7": {
+      "description": "Level II (HCPCS) modifier — Right hand, third digit (middle finger).",
+      "phrases": [
+        "right middle finger procedure",
+        "right hand third digit",
+        "middle finger (right) treated",
+        "site: right hand third digit"
+      ],
+      "note": "Hand/digit site modifier.",
+      "guidance": "Append when the right third digit is involved in the procedure."
+    }
+  },
+  {
+    "F8": {
+      "description": "Level II (HCPCS) modifier — Right hand, fourth digit (ring finger).",
+      "phrases": [
+        "right ring finger procedure",
+        "right hand fourth digit",
+        "ring finger (right) treated",
+        "site: right hand fourth digit"
+      ],
+      "note": "Hand/digit site modifier.",
+      "guidance": "Use to specify the right fourth digit as the service location."
+    }
+  },
+  {
+    "F9": {
+      "description": "Level II (HCPCS) modifier — Right hand, fifth digit (small finger).",
+      "phrases": [
+        "right small finger procedure",
+        "right hand fifth digit",
+        "small finger (right) treated",
+        "site: right hand fifth digit"
+      ],
+      "note": "Hand/digit site modifier.",
+      "guidance": "Append when a procedure involves the right fifth digit of the hand."
+    }
+  },
+  {
+    "GG": {
+      "description": "HCPCS modifier — Performance and payment of a screening mammogram and diagnostic mammogram on the same patient, same day.",
+      "phrases": [
+        "screening and diagnostic mammogram same day",
+        "transitioned from screening to diagnostic",
+        "both screening and diagnostic mammograms performed",
+        "mammography screening then diagnostic imaging"
+      ],
+      "note": "Used to communicate same-day screening + diagnostic mammography events per payer rules.",
+      "guidance": "Apply when both screening and diagnostic mammography services are performed on the same day for the same patient. Follow payer-specific billing guidance to avoid duplicate payment denials."
+    }
+  },
+  {
+    "GH": {
+      "description": "HCPCS modifier — Diagnostic mammogram converted from screening mammogram on same day.",
+      "phrases": [
+        "screening converted to diagnostic mammogram",
+        "additional diagnostic views obtained after screening",
+        "same-day screening upgraded to diagnostic",
+        "follow-up diagnostic imaging after screening"
+      ],
+      "note": "Specifies that a diagnostic mammogram was performed after or in place of the screening mammogram on the same day.",
+      "guidance": "Use to indicate the screening mammogram converted to diagnostic during the same encounter. Document the clinical trigger for conversion (e.g., abnormal screening finding)."
+    }
+  },
+  {
+    "LC": {
+      "description": "HCPCS modifier — Left circumflex coronary artery.",
+      "phrases": [
+        "procedure on left circumflex artery",
+        "stent placed in LC artery",
+        "PCI targeting left circumflex",
+        "coronary intervention LC"
+      ],
+      "note": "Used to identify the specific coronary vessel for cardiac intervention procedures.",
+      "guidance": "Append to coronary procedure codes to specify the left circumflex artery as the target vessel when selective vessel identification is required by payer or facility reporting."
+    }
+  },
+  {
+    "LD": {
+      "description": "HCPCS modifier — Left anterior descending coronary artery.",
+      "phrases": [
+        "procedure on left anterior descending artery",
+        "stent placed in LAD",
+        "PCI targeting LAD",
+        "coronary intervention LAD"
+      ],
+      "note": "LAD is often abbreviated; LD used in some HCPCS listing to indicate left anterior descending.",
+      "guidance": "Use when the left anterior descending artery is the procedural target. Ensure consistent use with local payer conventions (LAD vs LD)."
+    }
+  },
+  {
+    "LM": {
+      "description": "HCPCS modifier — Left main coronary artery.",
+      "phrases": [
+        "procedure on left main coronary artery",
+        "intervention in left main",
+        "stenting of left main",
+        "coronary intervention LM"
+      ],
+      "note": "Specifies the left main coronary vessel as the site of intervention.",
+      "guidance": "Append to coronary procedure codes to indicate the left main artery was treated. Document procedural details supporting vessel identification."
+    }
+  },
+  {
+    "LT": {
+      "description": "Modifier — Left side (used to identify procedures performed on the left side of the body).",
+      "phrases": [
+        "left side procedure",
+        "surgery on left arm",
+        "left-sided intervention",
+        "site: left"
+      ],
+      "note": "Commonly used for laterality when applicable; payer guidance may prefer RT/LT over modifier 50 for bilateral reporting.",
+      "guidance": "Use to indicate left-sided procedures. Many payers prefer separate line items with LT/RT for bilateral procedures rather than modifier 50; follow payer-specific billing rules."
+    }
+  },
+  {
+    "QM": {
+      "description": "HCPCS modifier — Ambulance service provided under arrangement by a provider of services.",
+      "phrases": [
+        "ambulance arranged by another provider",
+        "transport provided under contract",
+        "transport furnished under arrangement",
+        "ambulance service under arrangement"
+      ],
+      "note": "Distinguishes ambulance services furnished under arrangement versus directly by the provider.",
+      "guidance": "Use to identify ambulance transports arranged through another provider of services (facility-arranged). Follow payor rules about billing originator vs arranger."
+    }
+  },
+  {
+    "QN": {
+      "description": "HCPCS modifier — Ambulance service furnished directly by a provider of services.",
+      "phrases": [
+        "ambulance provided directly by facility",
+        "transport furnished by hospital-owned ambulance",
+        "direct provider ambulance service",
+        "ambulance service by the provider of services"
+      ],
+      "note": "Complements QM which indicates services provided under arrangement.",
+      "guidance": "Append when the ambulance service is furnished directly by a provider of services (not under arrangement). Check payer rules for appropriate billing entity and where to report the modifier."
+    }
+  },
+  {
+    "RC": {
+      "description": "HCPCS modifier — Right coronary artery.",
+      "phrases": [
+        "procedure on right coronary artery",
+        "stent in RCA",
+        "PCI targeting right coronary",
+        "coronary intervention RCA"
+      ],
+      "note": "Used to indicate the specific coronary vessel treated.",
+      "guidance": "Use to designate the right coronary artery as the site of coronary procedures when vessel-level identification is required."
+    }
+  },
+  {
+    "RI": {
+      "description": "HCPCS modifier — Ramus intermedius coronary artery.",
+      "phrases": [
+        "procedure on ramus intermedius",
+        "PCI of RI vessel",
+        "stent placed in ramus artery",
+        "coronary intervention RI"
+      ],
+      "note": "Ramus intermedius is a less common coronary branch; use when clinically applicable.",
+      "guidance": "Append to cardiac procedure codes to specify the ramus intermedius as the vessel treated when required by documentation or payer rules."
+    }
+  },
+  {
+    "RT": {
+      "description": "Modifier — Right side (used to identify procedures performed on the right side of the body).",
+      "phrases": [
+        "right side procedure",
+        "surgery on right leg",
+        "right-sided intervention",
+        "site: right"
+      ],
+      "note": "Paired with LT for laterality reporting. Many payers require RT/LT for laterality.",
+      "guidance": "Use to indicate right-sided procedures. When bilateral procedures are performed, follow payer preference for modifier 50 vs separate LT/RT line items."
+    }
+  },
+  {
+    "TA": {
+      "description": "HCPCS modifier — Left foot, great toe.",
+      "phrases": [
+        "left great toe procedure",
+        "hallux (left) treatment",
+        "left foot great toe surgery",
+        "site: left foot great toe"
+      ],
+      "note": "One of the foot/toe site modifiers for HCPCS.",
+      "guidance": "Append to procedures involving the left great toe when site-level identification is required."
+    }
+  },
+  {
+    "T1": {
+      "description": "HCPCS modifier — Left foot, second digit (toe).",
+      "phrases": [
+        "left second toe procedure",
+        "left foot second digit",
+        "procedure on left toe #2",
+        "site: left foot second digit"
+      ],
+      "note": "Foot/toe site modifier.",
+      "guidance": "Use to indicate the left second toe as the specific site of service."
+    }
+  },
+  {
+    "T2": {
+      "description": "HCPCS modifier — Left foot, third digit (toe).",
+      "phrases": [
+        "left third toe procedure",
+        "left foot third digit",
+        "procedure on left toe #3",
+        "site: left foot third digit"
+      ],
+      "note": "Foot/toe site modifier.",
+      "guidance": "Append when the left third toe is the target of the procedure."
+    }
+  },
+  {
+    "T3": {
+      "description": "HCPCS modifier — Left foot, fourth digit (toe).",
+      "phrases": [
+        "left fourth toe procedure",
+        "left foot fourth digit",
+        "procedure on left toe #4",
+        "site: left foot fourth digit"
+      ],
+      "note": "Foot/toe site modifier.",
+      "guidance": "Use to specify the left fourth toe as the service location."
+    }
+  },
+  {
+    "T4": {
+      "description": "HCPCS modifier — Left foot, fifth digit (small toe).",
+      "phrases": [
+        "left small toe procedure",
+        "left foot fifth digit",
+        "procedure on left toe #5",
+        "site: left foot fifth digit"
+      ],
+      "note": "Foot/toe site modifier.",
+      "guidance": "Append for procedures specifically involving the left fifth toe."
+    }
+  },
+  {
+    "T5": {
+      "description": "HCPCS modifier — Right foot, great toe.",
+      "phrases": [
+        "right great toe procedure",
+        "hallux (right) treatment",
+        "right foot great toe surgery",
+        "site: right foot great toe"
+      ],
+      "note": "Foot/toe site modifier.",
+      "guidance": "Use to identify the right great toe when reporting the procedure."
+    }
+  },
+  {
+    "T6": {
+      "description": "HCPCS modifier — Right foot, second digit (toe).",
+      "phrases": [
+        "right second toe procedure",
+        "right foot second digit",
+        "procedure on right toe #2",
+        "site: right foot second digit"
+      ],
+      "note": "Foot/toe site modifier.",
+      "guidance": "Append to indicate the right second toe is the procedural site."
+    }
+  },
+  {
+    "T7": {
+      "description": "HCPCS modifier — Right foot, third digit (toe).",
+      "phrases": [
+        "right third toe procedure",
+        "right foot third digit",
+        "procedure on right toe #3",
+        "site: right foot third digit"
+      ],
+      "note": "Foot/toe site modifier.",
+      "guidance": "Use when the right third toe is the target of the procedure."
+    }
+  },
+  {
+    "T8": {
+      "description": "HCPCS modifier — Right foot, fourth digit (toe).",
+      "phrases": [
+        "right fourth toe procedure",
+        "right foot fourth digit",
+        "procedure on right toe #4",
+        "site: right foot fourth digit"
+      ],
+      "note": "Foot/toe site modifier.",
+      "guidance": "Append when reporting a procedure of the right fourth toe."
+    }
+  },
+  {
+    "T9": {
+      "description": "HCPCS modifier — Right foot, fifth digit (small toe).",
+      "phrases": [
+        "right small toe procedure",
+        "right foot fifth digit",
+        "procedure on right toe #5",
+        "site: right foot fifth digit"
+      ],
+      "note": "Foot/toe site modifier.",
+      "guidance": "Use to indicate the right fifth toe as the specific site of service."
+    }
+  }
+]

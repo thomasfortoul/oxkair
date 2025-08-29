@@ -1,0 +1,170 @@
+{
+  "caseMeta": {
+    "caseId": "ENT-001",
+    "patientId": "246801",
+    "providerId": "PROV-001",
+    "dateOfService": "2025-05-20T09:12:00Z",
+    "claimType": "primary",
+    "status": "completed"
+  },
+  "procedureCodes": [
+    {
+      "code": "31255",
+      "description": "Nasal/sinus endoscopy, surgical; ethmoidectomy, total (anterior and posterior), including maxillary antrostomy, sphenoidotomy, and/or frontal sinus exploration (when performed); bilateral",
+      "isPrimary": true,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Primary FESS procedure covering multiple sinus surgeries.",
+        "excerpt": "Functional Endoscopic Sinus Surgery (FESS), including:\n   a. Bilateral total ethmoidectomy\n   b. Right maxillary antrostomy\n   c. Left frontal sinusotomy\n   d. Bilateral nasal polypectomy"
+      },
+      "rvu": 15.00,
+      "allowedModifiers": ["50", "62"],
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "code": "30999",
+      "description": "Unlisted procedure, nose",
+      "isPrimary": false,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Placement of absorbable nasal packing.",
+        "excerpt": "Placement of absorbable nasal packing (MeroGel, 2 units, 1 per side)"
+      },
+      "rvu": 5.00,
+      "allowedModifiers": ["59"],
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "code": "30115",
+      "description": "Excision, nasal polyp(s), extensive, bilateral",
+      "isPrimary": false,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Specific procedure for bilateral nasal polypectomy.",
+        "excerpt": "Bilateral nasal polypectomy"
+      },
+      "rvu": 8.00,
+      "allowedModifiers": ["50", "59"],
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "diagnosisCodes": [
+    {
+      "code": "J32.4",
+      "description": "Chronic rhinosinusitis, unspecified",
+      "isPrimary": true,
+      "evidence": {
+        "description": "Primary diagnosis for chronic rhinosinusitis.",
+        "excerpt": "Chronic rhinosinusitis with nasal polyps, bilateral (ICD-10 J32.4, J33.0)"
+      },
+      "laterality": "Bilateral",
+      "includes": [],
+      "excludes": [],
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "code": "J33.0",
+      "description": "Polyp of nasal cavity",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Secondary diagnosis for nasal polyps.",
+        "excerpt": "Chronic rhinosinusitis with nasal polyps, bilateral (ICD-10 J32.4, J33.0)"
+      },
+      "laterality": "Bilateral",
+      "includes": [],
+      "excludes": [],
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "modifierSuggestions": [
+    {
+      "procedureCode": "31255",
+      "modifier": "50",
+      "description": "Bilateral Procedure",
+      "classification": "Required",
+      "priority": 1,
+      "required": true,
+      "rationale": "The procedure involved bilateral total ethmoidectomy and bilateral nasal polypectomy.",
+      "fullJustification": "The operative note explicitly states 'Bilateral total ethmoidectomy' and 'Bilateral nasal polypectomy', indicating the procedure was performed on both sides.",
+      "confidence": 1.0,
+      "evidence": {
+        "description": "Evidence for bilateral performance.",
+        "excerpt": "Bilateral total ethmoidectomy"
+      },
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "procedureCode": "31255",
+      "modifier": "62",
+      "description": "Two Surgeons",
+      "classification": "Recommended",
+      "priority": 2,
+      "required": false,
+      "rationale": "A resident (Dr. Kim) participated under direct supervision for the entirety of the procedure.",
+      "fullJustification": "The note states 'Dr. Kim (resident) participated under direct supervision for the entirety of the procedure, including all critical steps.', supporting the involvement of two surgeons.",
+      "confidence": 0.9,
+      "evidence": {
+        "description": "Evidence of resident participation.",
+        "excerpt": "Dr. Kim (resident) participated under direct supervision for the entirety of the procedure, including all critical steps."
+      },
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "procedureCode": "30115",
+      "modifier": "59",
+      "description": "Distinct Procedural Service",
+      "classification": "Optional",
+      "priority": 3,
+      "required": false,
+      "rationale": "To indicate that the polypectomy was a distinct procedure from the FESS, if not bundled.",
+      "fullJustification": "While polypectomy can be part of FESS, if billed separately, modifier 59 would indicate it was a distinct service.",
+      "confidence": 0.7,
+      "evidence": {
+        "description": "Separate mention of polypectomy.",
+        "excerpt": "Bilateral nasal polypectomy"
+      },
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "complianceIssues": [],
+  "rvuSequencing": {
+    "sequencedCodes": ["31255", "30999", "30115"],
+    "optimalSequence": ["31255", "30115", "30999"],
+    "totalRVU": 28.00,
+    "sequencingRationale": ["Primary procedure first, then other significant procedures, then minor procedures."],
+    "recommendation": "Follow standard RVU sequencing guidelines."
+  },
+  "demographics": {
+    "patientName": "Emily Johnson",
+    "patientMRN": "246801",
+    "patientDOB": "1973-11-08",
+    "gender": "Female",
+    "attendingPhysician": "Dr. Amir Patel",
+    "providerSpecialty": "ENT",
+    "npi": "N/A",
+    "facilityName": "Unknown Hospital"
+  },
+  "encounter": {
+    "serviceDate": "2025-05-20",
+    "admissionDate": "2025-05-20",
+    "dischargeDate": "2025-05-20",
+    "visitType": "Inpatient Surgery",
+    "encounterDate": "2025-05-20",
+    "encounterTime": "09:12",
+    "anesthesiaType": "General Endotracheal"
+  },
+  "caseNotes": {
+    "primaryNoteText": "OPERATIVE NOTE\n\nPatient Name: Emily Johnson     MRN: 246801     DOB: 11/08/1973\nDate of Surgery: 05/20/2025    Time: 09:12 AM\nSurgeon: Dr. Amir Patel     Assistant: Dr. Jennifer Kim (PGY-3 Resident)\nAnesthesia: General Endotracheal\n\nPre-op Diagnosis: Chronic rhinosinusitis with nasal polyps, bilateral (ICD-10 J32.4, J33.0)\nPost-op Diagnosis: Same\n\nProcedures Performed:\n1. Functional Endoscopic Sinus Surgery (FESS), including:\n   a. Bilateral total ethmoidectomy\n   b. Right maxillary antrostomy\n   c. Left frontal sinusotomy\n   d. Bilateral nasal polypectomy\n2. Placement of absorbable nasal packing (MeroGel, 2 units, 1 per side)\n3. Application of Surgicel (oxidized regenerated cellulose, 3 strips for hemostasis)\n\nIndication: Refractory symptoms of sinusitis and nasal obstruction, unresponsive to maximal medical therapy.\n\nFindings: Diffuse polyposis, edematous mucosa, purulent drainage, polypoid tissue obstructing all sinuses involved.\n\nDescription of Procedure:\nAfter induction, the patient was prepped and draped in usual sterile fashion. Using a 0-degree endoscope, the nasal cavity was evaluated. Polypoid tissue was removed from bilateral nasal passages. Total ethmoidectomy performed bilaterally with careful dissection. Right maxillary antrostomy and left frontal sinusotomy completed. Hemostasis achieved with Surgicel (3 strips total). MeroGel absorbable packing placed, one unit per nostril. All tissue sent to pathology. Dr. Kim (resident) participated under direct supervision for the entirety of the procedure, including all critical steps. No intraoperative complications.\n\nDisposition: Patient to PACU in stable condition.\n\nAttestation: Resident (Dr. Kim) involved throughout; attending present for all key portions and final closure.",
+    "additionalNotes": []
+  },
+  "allEvidence": [],
+  "finalModifiers": [],
+  "claimSequence": null,
+  "currentStep": "code_extraction",
+  "completedSteps": ["initialization", "note_parsing", "code_extraction"],
+  "errors": [],
+  "history": [],
+  "createdAt": "2025-08-07T20:08:54Z",
+  "updatedAt": "2025-08-07T20:08:54Z",
+  "version": "1.0.0"
+}

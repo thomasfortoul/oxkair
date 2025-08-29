@@ -1,0 +1,68 @@
+{
+  "procedureCodes": [
+    {
+      "code": "31255",
+      "description": "Functional Endoscopic Sinus Surgery, total ethmoidectomy; bilateral",
+      "isPrimary": true,
+      "evidence": {
+        "description": "Bilateral FESS performed for chronic rhinosinusitis with polyps.",
+        "excerpt": "Functional Endoscopic Sinus Surgery (FESS), including: a. Bilateral total ethmoidectomy b. Right maxillary antrostomy c. Left frontal sinusotomy d. Bilateral nasal polypectomy"
+      },
+      "sourceNoteType": "Operative Note",
+      "rvu": 10.00
+    },
+    {
+      "code": "30999",
+      "description": "Unlisted procedure, nose",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Placement of absorbable nasal packing.",
+        "excerpt": "Placement of absorbable nasal packing (MeroGel, 2 units, 1 per side)"
+      },
+      "sourceNoteType": "Operative Note",
+      "rvu": 0.50
+    }
+  ],
+  "diagnosisCodes": [
+    {
+      "code": "J32.4",
+      "description": "Chronic rhinosinusitis, unspecified",
+      "isPrimary": true,
+      "evidence": {
+        "description": "Primary diagnosis for chronic rhinosinusitis.",
+        "excerpt": "Chronic rhinosinusitis with nasal polyps, bilateral (ICD-10 J32.4, J33.0)"
+      },
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "code": "J33.0",
+      "description": "Polyp of nasal cavity",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Nasal polyps associated with rhinosinusitis.",
+        "excerpt": "Chronic rhinosinusitis with nasal polyps, bilateral (ICD-10 J32.4, J33.0)"
+      },
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "modifierSuggestions": [
+    {
+      "procedureCode": "31255",
+      "modifier": "80",
+      "evidence": {
+        "description": "Assistant surgeon (resident) participated in the procedure.",
+        "excerpt": "Dr. Kim (resident) participated under direct supervision for the entirety of the procedure, including all critical steps."
+      },
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "complianceIssues": [
+    {
+      "type": "LCD Policy Violation",
+      "description": "FESS requires documentation of failed maximal medical therapy.",
+      "affectedCodes": ["31255"],
+      "violationDetails": "LCD Policy L12345 requires documentation of at least 3 months of failed maximal medical therapy for FESS.",
+      "lcdPolicyId": "L12345"
+    }
+  ]
+}

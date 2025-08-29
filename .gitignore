@@ -1,0 +1,50 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode/
+
+# Next.js build output
+.next/
+out/
+dist/
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Vercel/Netlify deployments
+.vercel/
+.netlify/
+.roo/
+
+# Misc
+coverage/
+*.local
+.roo
+.roomodes
+
+# Oxkair-shell test files
+oxkair-shell/note_testing/
+oxkair-shell/tests/
+
+docs/DB-migration
+
+#DATA
+local_database/
+
+oxkair-shell/public/coder/data/
+development/X-MS.json
+
+scripts/test-*
+setup-* 
+scripts/encode-xms.js

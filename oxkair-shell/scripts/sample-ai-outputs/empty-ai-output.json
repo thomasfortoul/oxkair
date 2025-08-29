@@ -1,0 +1,49 @@
+{
+  "caseMeta": {
+    "caseId": "test-case-005",
+    "patientId": "patient-005",
+    "providerId": "provider-005",
+    "dateOfService": "2024-02-05T10:00:00Z",
+    "claimType": "primary",
+    "status": "processing"
+  },
+  "procedureCodes": [],
+  "diagnosisCodes": [],
+  "modifierSuggestions": [],
+  "complianceIssues": [],
+  "rvuSequencing": null,
+  "demographics": null,
+  "encounter": null,
+  "caseNotes": {
+    "primaryNoteText": "CHIEF COMPLAINT: Abdominal pain\n\nHISTORY OF PRESENT ILLNESS: The patient is a 45-year-old male who presents with a 2-day history of right upper quadrant abdominal pain. The pain is constant, 7/10 in severity, and radiates to the right shoulder. Associated with nausea and vomiting.\n\nPHYSICAL EXAMINATION: The patient appears uncomfortable. Vital signs are stable. Abdomen is tender in the right upper quadrant with positive Murphy's sign. No rebound or guarding.\n\nASSESSMENT AND PLAN: Clinical presentation consistent with acute cholecystitis. Recommend surgical consultation for possible cholecystectomy. Patient counseled on treatment options.",
+    "additionalNotes": []
+  },
+  "allEvidence": [],
+  "finalModifiers": [],
+  "claimSequence": null,
+  "currentStep": "initialization",
+  "completedSteps": [],
+  "errors": [
+    {
+      "code": "PROCESSING_INCOMPLETE",
+      "message": "AI processing has not completed for this case",
+      "severity": "medium",
+      "timestamp": "2024-02-05T10:30:00Z"
+    }
+  ],
+  "history": [
+    {
+      "agentName": "WorkflowOrchestrator",
+      "timestamp": "2024-02-05T10:00:00Z",
+      "action": "initialize",
+      "result": "success",
+      "details": {
+        "caseId": "test-case-005",
+        "status": "initialized"
+      }
+    }
+  ],
+  "createdAt": "2024-02-05T10:00:00Z",
+  "updatedAt": "2024-02-05T10:30:00Z",
+  "version": "1.0.0"
+}

@@ -1,0 +1,56 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "regions": ["iad1"],
+  "functions": {
+    "app/actions/process-case.ts": {
+      "maxDuration": 120,
+      "memory": 1024
+    },
+    "app/api/cases/[caseId]/route.ts": {
+      "maxDuration": 120,
+      "memory": 1024
+    },
+    "app/api/**": {
+      "maxDuration": 90,
+      "memory": 2048
+    }
+  },
+  "env": {
+    "VERCEL": "true",
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "VERCEL": "true",
+      "NODE_ENV": "production"
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    }
+  ]
+}

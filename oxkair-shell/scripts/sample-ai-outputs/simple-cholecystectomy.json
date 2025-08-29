@@ -1,0 +1,39 @@
+{
+  "procedureCodes": [
+    {
+      "code": "47562",
+      "description": "Laparoscopic cholecystectomy",
+      "isPrimary": true,
+      "evidence": {
+        "description": "Laparoscopic cholecystectomy performed.",
+        "excerpt": "Procedure: Laparoscopic cholecystectomy"
+      },
+      "sourceNoteType": "Operative Note",
+      "rvu": 12.50
+    }
+  ],
+  "diagnosisCodes": [
+    {
+      "code": "K80.10",
+      "description": "Calculus of gallbladder with acute cholecystitis without obstruction",
+      "isPrimary": true,
+      "evidence": {
+        "description": "Preoperative diagnosis of symptomatic cholelithiasis with acute cholecystitis.",
+        "excerpt": "Preoperative Diagnosis: Symptomatic cholelithiasis with acute cholecystitis"
+      },
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "code": "K81.1",
+      "description": "Chronic cholecystitis",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Postoperative diagnosis of chronic cholecystitis.",
+        "excerpt": "Postoperative Diagnosis: Chronic cholecystitis with cholelithiasis"
+      },
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "modifierSuggestions": [],
+  "complianceIssues": []
+}

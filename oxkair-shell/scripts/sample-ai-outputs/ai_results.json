@@ -1,0 +1,176 @@
+{
+  "encounter": {
+    "patientDOB": "1973-11-08",
+    "patientMRN": "246801",
+    "patientName": "Emily Johnson",
+    "facilityName": "",
+    "encounterDate": "2025-05-20",
+    "encounterTime": "09:12",
+    "anesthesiaType": "General Endotracheal",
+    "attendingPhysician": "Dr. Amir Patel"
+  },
+  "hcpcsCodes": [],
+  "demographics": {
+    "patientDOB": "1973-11-08",
+    "patientMRN": "246801",
+    "patientName": "Emily Johnson",
+    "facilityName": "",
+    "encounterDate": "2025-05-20",
+    "attendingPhysician": "Dr. Amir Patel"
+  },
+  "rvuSequencing": {
+    "sequencedCodes": [
+      "31276",
+      "31255",
+      "31267",
+      "31237"
+    ],
+    "sequencingRationale": [
+      "Code 31276 is sequenced first due to the highest RVU of 6.25, indicating the most resource-intensive procedure.",
+      "Code 31255 follows with an RVU of 6.02, being the second most resource-intensive.",
+      "Code 31267 is next with an RVU of 5.02, as it is less resource-intensive than the previous codes.",
+      "Code 31237 is sequenced last with the lowest RVU of 3.41, indicating the least resource-intensive procedure."
+    ]
+  },
+  "diagnosisCodes": [
+    {
+      "code": "J32.4",
+      "laterality": "Bilateral",
+      "description": "Chronic rhinosinusitis with nasal polyps"
+    },
+    {
+      "code": "J33.0",
+      "laterality": "Bilateral",
+      "description": "Nasal polyp"
+    }
+  ],
+  "procedureCodes": [
+    {
+      "rvu": 6.02,
+      "code": "31255",
+      "laterality": "Bilateral",
+      "description": "Nasal/sinus endoscopy, surgical; with ethmoidectomy, total (anterior and posterior)",
+      "allowedModifiers": [],
+      "exemptFromModifiers": []
+    },
+    {
+      "rvu": 5.02,
+      "code": "31267",
+      "laterality": "Right",
+      "description": "Nasal/sinus endoscopy, surgical, with maxillary antrostomy; with removal of tissue from maxillary sinus",
+      "allowedModifiers": [],
+      "exemptFromModifiers": []
+    },
+    {
+      "rvu": 6.25,
+      "code": "31276",
+      "laterality": "Left",
+      "description": "Nasal/sinus endoscopy, surgical, with frontal sinus exploration, with or without removal of tissue from frontal sinus",
+      "allowedModifiers": [],
+      "exemptFromModifiers": []
+    },
+    {
+      "rvu": 3.41,
+      "code": "31237",
+      "laterality": "Bilateral",
+      "description": "Nasal/sinus endoscopy, surgical; with biopsy, polypectomy or debridement (separate procedure)",
+      "allowedModifiers": [],
+      "exemptFromModifiers": []
+    }
+  ],
+  "complianceIssues": [],
+  "modifierSuggestions": [
+    {
+      "code": "31255",
+      "category": "Pricing",
+      "modifier": "82",
+      "confidence": 0.95,
+      "justification": "Assistant surgeon (resident) involved under direct supervision for critical steps.",
+      "classification": "Pricing"
+    },
+    {
+      "code": "31267",
+      "category": "Pricing",
+      "modifier": "82",
+      "confidence": 0.95,
+      "justification": "Assistant surgeon (resident) involved under direct supervision for critical steps.",
+      "classification": "Pricing"
+    },
+    {
+      "code": "31276",
+      "category": "Pricing",
+      "modifier": "82",
+      "confidence": 0.95,
+      "justification": "Assistant surgeon (resident) involved under direct supervision for critical steps.",
+      "classification": "Pricing"
+    },
+    {
+      "code": "31237",
+      "category": "Pricing",
+      "modifier": "82",
+      "confidence": 0.95,
+      "justification": "Assistant surgeon (resident) involved under direct supervision for critical steps.",
+      "classification": "Pricing"
+    },
+    {
+      "code": "31255",
+      "category": "Pricing",
+      "modifier": "50",
+      "confidence": 0.9,
+      "justification": "Procedure performed bilaterally as indicated in the operative note and procedure description.",
+      "classification": "Pricing"
+    },
+    {
+      "code": "31237",
+      "category": "Pricing",
+      "modifier": "50",
+      "confidence": 0.9,
+      "justification": "Procedure performed bilaterally as indicated in the operative note and procedure description.",
+      "classification": "Pricing"
+    }
+  ],
+  "clinicalContextSummary": {
+    "diagnosis": "Chronic rhinosinusitis with nasal polyps, bilateral",
+    "procedure": "Functional Endoscopic Sinus Surgery (FESS) with bilateral total ethmoidectomy, right maxillary antrostomy, left frontal sinusotomy, bilateral nasal polypectomy",
+    "indication": "Refractory symptoms of sinusitis and nasal obstruction, unresponsive to maximal medical therapy",
+    "key_findings": "Diffuse polyposis, edematous mucosa, purulent drainage, polypoid tissue obstructing all sinuses involved",
+    "product_used": "MeroGel, Surgicel",
+    "anatomical_site": "Nasal cavity, ethmoid, maxillary, frontal sinuses"
+  },
+  "assistantCoSurgeonAnalysis": {
+    "coSurgeonName": null,
+    "assistantEvidence": "Dr. Kim (resident) participated under direct supervision for the entirety of the procedure, including all critical steps.",
+    "coSurgeonDetected": false,
+    "coSurgeonEvidence": null,
+    "assistantSurgeonName": "Dr. Jennifer Kim",
+    "assistantSurgeonRole": "PGY-3 Resident",
+    "attestation": "Resident (Dr. Kim) involved throughout; attending present for all key portions and final closure.",
+    "codeModifierAssignments": [
+      {
+        "code": "31255",
+        "assignedModifier": "82",
+        "modifierRationale": "Assistant surgeon (resident) involved under direct supervision for critical steps.",
+        "attestationRequired": true
+      },
+      {
+        "code": "31267",
+        "assignedModifier": "82",
+        "modifierRationale": "Assistant surgeon (resident) involved under direct supervision for critical steps.",
+        "attestationRequired": true
+      },
+      {
+        "code": "31276",
+        "assignedModifier": "82",
+        "modifierRationale": "Assistant surgeon (resident) involved under direct supervision for critical steps.",
+        "attestationRequired": true
+      },
+      {
+        "code": "31237",
+        "assignedModifier": "82",
+        "modifierRationale": "Assistant surgeon (resident) involved under direct supervision for critical steps.",
+        "attestationRequired": true
+      }
+    ],
+    "assistantSurgeonDetected": true
+  }
+}

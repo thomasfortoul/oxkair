@@ -1,0 +1,37 @@
+{
+  "preset": "ts-jest/presets/default-esm",
+  "extensionsToTreatAsEsm": [".ts", ".tsx"],
+  "testEnvironment": "node",
+  "testMatch": [
+    "**/__tests__/types/**/*.test.js"
+  ],
+  "moduleFileExtensions": ["js", "ts", "tsx", "json", "node"],
+  "roots": ["<rootDir>/__tests__", "<rootDir>/app", "<rootDir>/lib", "<rootDir>/components"],
+  "transform": {
+    "^.+\\.(ts|tsx)$": ["ts-jest", {
+      "useESM": true,
+      "tsconfig": "<rootDir>/tsconfig.json"
+    }],
+    "^.+\\.js$": ["babel-jest", {
+      "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]]
+    }]
+  },
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/$1",
+    "^~/(.*)$": "<rootDir>/lib/$1"
+  },
+  "collectCoverageFrom": [
+    "**/app/**/*.ts",
+    "**/lib/**/*.ts",
+    "**/components/**/*.ts",
+    "!**/node_modules/**",
+    "!**/__tests__/**",
+    "!**/*.test.ts"
+  ],
+  "reporters": ["default"],
+  "setupFiles": ["<rootDir>/jest.setup.ts"],
+  "globalSetup": "<rootDir>/jest.global-setup.ts",
+  "verbose": true,
+  "detectOpenHandles": true,
+  "forceExit": true
+}

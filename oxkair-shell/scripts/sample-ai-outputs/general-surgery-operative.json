@@ -1,0 +1,157 @@
+{
+  "caseMeta": {
+    "caseId": "GS-001",
+    "patientId": "147852",
+    "providerId": "PROV-002",
+    "dateOfService": "2025-05-23T07:30:00Z",
+    "claimType": "primary",
+    "status": "completed"
+  },
+  "procedureCodes": [
+    {
+      "code": "47600",
+      "description": "Cholecystectomy; open",
+      "isPrimary": true,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Primary procedure performed: Open cholecystectomy.",
+        "excerpt": "Open cholecystectomy"
+      },
+      "rvu": 20.00,
+      "allowedModifiers": ["62", "51"],
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "code": "47100",
+      "description": "Biopsy of liver, needle; percutaneous",
+      "isPrimary": false,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Liver biopsy performed for staging.",
+        "excerpt": "Liver biopsy for staging"
+      },
+      "rvu": 7.50,
+      "allowedModifiers": ["51", "59"],
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "code": "96374",
+      "description": "Therapeutic, prophylactic, or diagnostic injection (specify substance or drug); intravenous push, single or initial substance/drug",
+      "isPrimary": false,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Administration of intravenous ceftriaxone.",
+        "excerpt": "Administration of intraoperative intravenous ceftriaxone 500 mg"
+      },
+      "rvu": 1.00,
+      "allowedModifiers": ["59"],
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "diagnosisCodes": [
+    {
+      "code": "Q44.2",
+      "description": "Biliary atresia",
+      "isPrimary": true,
+      "evidence": {
+        "description": "Primary diagnosis for the patient.",
+        "excerpt": "Biliary atresia, requiring cholecystectomy (ICD-10 Q44.2)"
+      },
+      "laterality": "N/A",
+      "includes": [],
+      "excludes": [],
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "modifierSuggestions": [
+    {
+      "procedureCode": "47600",
+      "modifier": "62",
+      "description": "Two Surgeons",
+      "classification": "Required",
+      "priority": 1,
+      "required": true,
+      "rationale": "An assistant surgeon (Dr. Mark Bell) participated throughout the procedure.",
+      "fullJustification": "The operative note explicitly states 'Assistant: Dr. Mark Bell (MD, assistant surgeon)' and 'Assistant surgeon Dr. Bell participated throughout.', indicating the involvement of two surgeons.",
+      "confidence": 1.0,
+      "evidence": {
+        "description": "Evidence of assistant surgeon participation.",
+        "excerpt": "Assistant: Dr. Mark Bell (MD, assistant surgeon)"
+      },
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "procedureCode": "47100",
+      "modifier": "51",
+      "description": "Multiple Procedures",
+      "classification": "Recommended",
+      "priority": 2,
+      "required": false,
+      "rationale": "Liver biopsy was performed in addition to the primary cholecystectomy.",
+      "fullJustification": "The note lists 'Liver biopsy for staging' as a separate procedure performed during the same operative session as the cholecystectomy.",
+      "confidence": 0.9,
+      "evidence": {
+        "description": "Evidence of multiple procedures.",
+        "excerpt": "Liver biopsy for staging"
+      },
+      "sourceNoteType": "Operative Note"
+    },
+    {
+      "procedureCode": "96374",
+      "modifier": "59",
+      "description": "Distinct Procedural Service",
+      "classification": "Optional",
+      "priority": 3,
+      "required": false,
+      "rationale": "To indicate that the IV administration was a distinct service from the surgical procedures.",
+      "fullJustification": "The administration of ceftriaxone is a separate service from the surgical procedures and may require a modifier to indicate its distinct nature.",
+      "confidence": 0.7,
+      "evidence": {
+        "description": "Separate administration of medication.",
+        "excerpt": "Administration of intraoperative intravenous ceftriaxone 500 mg"
+      },
+      "sourceNoteType": "Operative Note"
+    }
+  ],
+  "complianceIssues": [],
+  "rvuSequencing": {
+    "sequencedCodes": ["47600", "47100", "96374"],
+    "optimalSequence": ["47600", "47100", "96374"],
+    "totalRVU": 28.50,
+    "sequencingRationale": ["Primary surgical procedure first, followed by other surgical procedures, then ancillary services."],
+    "recommendation": "Follow standard RVU sequencing guidelines."
+  },
+  "demographics": {
+    "patientName": "Joshua Allen",
+    "patientMRN": "147852",
+    "patientDOB": "2023-12-18",
+    "gender": "Male",
+    "attendingPhysician": "Dr. Lisa Wright",
+    "providerSpecialty": "General Surgery",
+    "npi": "N/A",
+    "facilityName": "Unknown Hospital"
+  },
+  "encounter": {
+    "serviceDate": "2025-05-23",
+    "admissionDate": "2025-05-23",
+    "dischargeDate": "2025-05-23",
+    "visitType": "Inpatient Surgery",
+    "encounterDate": "2025-05-23",
+    "encounterTime": "07:30",
+    "anesthesiaType": "General Endotracheal"
+  },
+  "caseNotes": {
+    "primaryNoteText": "OPERATIVE NOTE\n\nPatient Name: Joshua Allen      MRN: 147852     DOB: 12/18/2023 (5 months old, weight: 3.5 kg)\nDate of Surgery: 05/23/2025    Time: 7:30 AM\nSurgeon: Dr. Lisa Wright      Assistant: Dr. Mark Bell (MD, assistant surgeon)\nAnesthesia: General Endotracheal\n\nPre-op Diagnosis: Biliary atresia, requiring cholecystectomy (ICD-10 Q44.2)\nPost-op Diagnosis: Same\n\nProcedures Performed:\n1. Open cholecystectomy\n2. Liver biopsy for staging\n3. Administration of intraoperative intravenous ceftriaxone 500 mg\n4. Placement of sequential compression device (SCD) for DVT prophylaxis\n\nIndication: Infant with progressive jaundice, imaging confirming biliary atresia, planned cholecystectomy and staging.\n\nFindings: Atrophic gallbladder, fibrotic liver, no gallstones.\n\nProcedure:\nAfter anesthesia, patient prepped/draped in sterile fashion. Right subcostal incision made. Gallbladder mobilized and removed. Liver biopsy taken from left lobe. Hemostasis achieved. Ceftriaxone 500 mg administered IV at start of procedure. Sequential compression devices applied to both lower extremities before incision. Assistant surgeon Dr. Bell participated throughout. Estimated blood loss minimal.\n\nDisposition: Patient extubated in OR, to PACU stable.\n\nAttestation: Assistant surgeon present for entirety of case.",
+    "additionalNotes": []
+  },
+  "allEvidence": [],
+  "finalModifiers": [],
+  "claimSequence": null,
+  "currentStep": "code_extraction",
+  "completedSteps": ["initialization", "note_parsing", "code_extraction"],
+  "errors": [],
+  "history": [],
+  "createdAt": "2025-08-07T20:09:11Z",
+  "updatedAt": "2025-08-07T20:09:11Z",
+  "version": "1.0.0"
+}

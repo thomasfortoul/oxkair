@@ -1,0 +1,317 @@
+{
+  "caseMeta": {
+    "caseId": "test-case-004",
+    "patientId": "patient-004",
+    "providerId": "provider-004",
+    "dateOfService": "2024-02-01T09:00:00Z",
+    "claimType": "primary",
+    "status": "completed"
+  },
+  "procedureCodes": [
+    {
+      "code": "43644",
+      "description": "Laparoscopic gastric bypass and Roux-en-Y gastroenterostomy",
+      "isPrimary": true,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Primary laparoscopic gastric bypass procedure performed",
+        "excerpt": "The patient underwent laparoscopic Roux-en-Y gastric bypass. Five laparoscopic ports were placed. The stomach was divided using a linear stapler to create a small gastric pouch. A Roux-en-Y limb was created with gastrojejunostomy and jejunojejunostomy anastomoses."
+      },
+      "rvu": 26.91,
+      "allowedModifiers": ["22", "50", "51", "52", "53", "59"],
+      "sourceNoteType": "operative_notes"
+    },
+    {
+      "code": "43775",
+      "description": "Laparoscopic repair of paraesophageal hernia",
+      "isPrimary": false,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Concurrent repair of paraesophageal hernia during gastric bypass",
+        "excerpt": "A large paraesophageal hernia was identified and repaired during the procedure. The hernia sac was reduced and the crural repair was performed with non-absorbable sutures. Mesh reinforcement was placed."
+      },
+      "rvu": 17.28,
+      "allowedModifiers": ["22", "51", "59"],
+      "sourceNoteType": "operative_notes"
+    },
+    {
+      "code": "88305",
+      "description": "Level IV - Surgical pathology, gross and microscopic examination",
+      "isPrimary": false,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Pathologic examination of gastric tissue specimen",
+        "excerpt": "GROSS DESCRIPTION: The specimen consists of gastric fundus tissue measuring 2.5 x 1.8 x 0.8 cm. MICROSCOPIC DESCRIPTION: Sections show chronic gastritis with moderate inflammatory infiltrate. No evidence of malignancy. H. pylori organisms are not identified."
+      },
+      "rvu": 1.23,
+      "allowedModifiers": ["26", "TC"],
+      "sourceNoteType": "pathology_notes"
+    },
+    {
+      "code": "93000",
+      "description": "Electrocardiogram, routine ECG with at least 12 leads",
+      "isPrimary": false,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Preoperative ECG performed for cardiac clearance",
+        "excerpt": "Preoperative 12-lead ECG was obtained prior to surgery. ECG shows normal sinus rhythm with rate 78 bpm. No acute changes. Patient cleared for surgery from cardiac standpoint."
+      },
+      "rvu": 0.17,
+      "allowedModifiers": ["26", "TC"],
+      "sourceNoteType": "admission_notes"
+    },
+    {
+      "code": "36000",
+      "description": "Introduction of needle or intracatheter, vein",
+      "isPrimary": false,
+      "isAddOnCode": false,
+      "evidence": {
+        "description": "Central venous access established for procedure",
+        "excerpt": "A central venous catheter was placed in the right internal jugular vein under ultrasound guidance for intraoperative monitoring and fluid management. Good blood return obtained."
+      },
+      "rvu": 1.33,
+      "allowedModifiers": ["59", "76", "77"],
+      "sourceNoteType": "operative_notes"
+    }
+  ],
+  "diagnosisCodes": [
+    {
+      "code": "E66.01",
+      "description": "Morbid (severe) obesity due to excess calories",
+      "isPrimary": true,
+      "evidence": {
+        "description": "Primary diagnosis of morbid obesity meeting surgical criteria",
+        "excerpt": "The patient has morbid obesity with BMI of 47.3 kg/m². Multiple weight loss attempts have failed. Patient meets criteria for bariatric surgery with obesity-related comorbidities."
+      },
+      "includes": ["Morbid obesity", "Severe obesity", "BMI >40"],
+      "excludes": ["Simple obesity", "Overweight"],
+      "sourceNoteType": "admission_notes"
+    },
+    {
+      "code": "E11.65",
+      "description": "Type 2 diabetes mellitus with hyperglycemia",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Type 2 diabetes with poor glycemic control",
+        "excerpt": "Patient has poorly controlled type 2 diabetes mellitus with recent HbA1c of 9.2%. Currently on metformin and insulin therapy. Frequent episodes of hyperglycemia requiring adjustment of medications."
+      },
+      "sourceNoteType": "admission_notes"
+    },
+    {
+      "code": "I10",
+      "description": "Essential hypertension",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Hypertension requiring multiple medications",
+        "excerpt": "Patient has essential hypertension currently managed with lisinopril and hydrochlorothiazide. Blood pressure readings have been elevated despite medication compliance."
+      },
+      "sourceNoteType": "admission_notes"
+    },
+    {
+      "code": "G47.33",
+      "description": "Obstructive sleep apnea (adult) (pediatric)",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Severe obstructive sleep apnea documented by sleep study",
+        "excerpt": "Patient has severe obstructive sleep apnea confirmed by overnight polysomnography. AHI of 42 events per hour. Currently uses CPAP therapy nightly."
+      },
+      "sourceNoteType": "admission_notes"
+    },
+    {
+      "code": "K44.9",
+      "description": "Diaphragmatic hernia without obstruction or gangrene",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Large paraesophageal hernia identified on imaging",
+        "excerpt": "CT scan demonstrates a large paraesophageal hernia with significant portion of stomach herniated into the thoracic cavity. No evidence of obstruction or strangulation."
+      },
+      "sourceNoteType": "operative_notes"
+    },
+    {
+      "code": "K29.50",
+      "description": "Unspecified chronic gastritis without bleeding",
+      "isPrimary": false,
+      "evidence": {
+        "description": "Chronic gastritis found on pathologic examination",
+        "excerpt": "Pathologic examination of gastric specimen reveals chronic gastritis with moderate inflammatory infiltrate. No evidence of malignancy or H. pylori infection."
+      },
+      "sourceNoteType": "pathology_notes"
+    }
+  ],
+  "modifierSuggestions": [
+    {
+      "procedureCode": "43644",
+      "modifier": "22",
+      "description": "Increased procedural services",
+      "classification": "Required",
+      "priority": 1,
+      "required": true,
+      "rationale": "Significantly increased complexity due to concurrent hernia repair",
+      "fullJustification": "The gastric bypass procedure required significantly more work than usual due to the concurrent repair of a large paraesophageal hernia. Additional operative time and complexity were required to safely complete both procedures.",
+      "confidence": 0.92,
+      "evidence": {
+        "description": "Increased complexity due to concurrent hernia repair",
+        "excerpt": "A large paraesophageal hernia was identified and repaired during the procedure. The hernia sac was reduced and the crural repair was performed with non-absorbable sutures. Mesh reinforcement was placed."
+      },
+      "sourceNoteType": "operative_notes"
+    },
+    {
+      "procedureCode": "43775",
+      "modifier": "51",
+      "description": "Multiple procedures",
+      "classification": "Required",
+      "priority": 1,
+      "required": true,
+      "rationale": "Secondary procedure performed during same operative session",
+      "fullJustification": "The paraesophageal hernia repair was performed as a secondary procedure during the same operative session as the gastric bypass.",
+      "confidence": 0.95,
+      "evidence": {
+        "description": "Secondary procedure during same operative session",
+        "excerpt": "A large paraesophageal hernia was identified and repaired during the procedure."
+      },
+      "sourceNoteType": "operative_notes"
+    },
+    {
+      "procedureCode": "88305",
+      "modifier": "26",
+      "description": "Professional component",
+      "classification": "Recommended",
+      "priority": 2,
+      "required": false,
+      "rationale": "Pathologist interpretation component",
+      "fullJustification": "The pathology examination includes both technical and professional components. The professional component represents the pathologist's interpretation and diagnosis.",
+      "confidence": 0.85,
+      "evidence": {
+        "description": "Pathologist interpretation provided",
+        "excerpt": "MICROSCOPIC DESCRIPTION: Sections show chronic gastritis with moderate inflammatory infiltrate. No evidence of malignancy. H. pylori organisms are not identified."
+      },
+      "sourceNoteType": "pathology_notes"
+    },
+    {
+      "procedureCode": "93000",
+      "modifier": "26",
+      "description": "Professional component",
+      "classification": "Recommended",
+      "priority": 2,
+      "required": false,
+      "rationale": "Physician interpretation of ECG",
+      "fullJustification": "The ECG was interpreted by the physician with formal report generation.",
+      "confidence": 0.80,
+      "evidence": {
+        "description": "Physician interpretation of ECG provided",
+        "excerpt": "ECG shows normal sinus rhythm with rate 78 bpm. No acute changes. Patient cleared for surgery from cardiac standpoint."
+      },
+      "sourceNoteType": "admission_notes"
+    },
+    {
+      "procedureCode": "36000",
+      "modifier": "59",
+      "description": "Distinct procedural service",
+      "classification": "Optional",
+      "priority": 3,
+      "required": false,
+      "rationale": "Central line placement distinct from primary procedure",
+      "fullJustification": "The central venous catheter placement was performed as a distinct service separate from the primary surgical procedure for monitoring purposes.",
+      "confidence": 0.75,
+      "evidence": {
+        "description": "Central line placed for monitoring purposes",
+        "excerpt": "A central venous catheter was placed in the right internal jugular vein under ultrasound guidance for intraoperative monitoring and fluid management."
+      },
+      "sourceNoteType": "operative_notes"
+    }
+  ],
+  "complianceIssues": [
+    {
+      "type": "CCI",
+      "description": "Comprehensive-component edit - Additional review required for concurrent procedures",
+      "severity": "medium",
+      "affectedCodes": ["43644", "43775"],
+      "recommendation": "Verify that both procedures were medically necessary and performed at separate anatomic sites or as distinct procedures",
+      "violationDetails": "CCI Edit: CPT codes 43644 and 43775 may be subject to comprehensive-component editing. Additional documentation may be required to justify billing both procedures together.",
+      "lcdPolicyId": "CCI-001-GASTRIC",
+      "evidence": {
+        "description": "Concurrent gastric bypass and hernia repair procedures",
+        "excerpt": "The patient underwent laparoscopic Roux-en-Y gastric bypass. A large paraesophageal hernia was identified and repaired during the procedure."
+      },
+      "sourceNoteType": "operative_notes"
+    },
+    {
+      "type": "MUE",
+      "description": "Multiple units may require additional documentation",
+      "severity": "low",
+      "affectedCodes": ["88305"],
+      "recommendation": "Ensure proper documentation for multiple pathology specimens if applicable",
+      "violationDetails": "MUE Edit: CPT code 88305 has specific unit limitations. Verify that multiple specimens warrant separate billing.",
+      "evidence": {
+        "description": "Single pathology specimen examined",
+        "excerpt": "The specimen consists of gastric fundus tissue measuring 2.5 x 1.8 x 0.8 cm."
+      },
+      "sourceNoteType": "pathology_notes"
+    },
+    {
+      "type": "LCD",
+      "description": "Bariatric surgery LCD requirements verification needed",
+      "severity": "high",
+      "affectedCodes": ["43644"],
+      "recommendation": "Verify all LCD requirements are met including BMI, comorbidities, and documentation requirements",
+      "violationDetails": "LCD Policy L33742: Bariatric surgery requires specific documentation including BMI ≥40 or BMI ≥35 with comorbidities, failed conservative treatment, psychological evaluation, and nutritional assessment.",
+      "lcdPolicyId": "L33742",
+      "evidence": {
+        "description": "Bariatric surgery performed with documented criteria",
+        "excerpt": "The patient has morbid obesity with BMI of 47.3 kg/m². Multiple weight loss attempts have failed. Patient meets criteria for bariatric surgery with obesity-related comorbidities."
+      },
+      "sourceNoteType": "admission_notes"
+    }
+  ],
+  "rvuSequencing": {
+    "sequencedCodes": ["43644", "43775", "88305", "93000", "36000"],
+    "optimalSequence": ["43644", "43775", "88305", "93000", "36000"],
+    "totalRVU": 46.92,
+    "sequencingRationale": [
+      "Primary procedure (43644) sequenced first - highest RVU",
+      "Secondary surgical procedure (43775) sequenced second with modifier 51",
+      "Pathology procedure (88305) sequenced third",
+      "Diagnostic procedure (93000) sequenced fourth",
+      "Ancillary procedure (36000) sequenced last"
+    ],
+    "recommendation": "Sequence maintained with modifier 51 applied to secondary procedures. Review CCI edits for concurrent procedures."
+  },
+  "demographics": {
+    "patientName": "Michael Johnson",
+    "patientMRN": "MRN456789",
+    "patientDOB": "1975-12-03",
+    "gender": "Male",
+    "attendingPhysician": "Dr. Anderson",
+    "providerSpecialty": "Bariatric Surgery",
+    "npi": "4567890123",
+    "facilityName": "Bariatric Surgery Center"
+  },
+  "encounter": {
+    "serviceDate": "2024-02-01",
+    "admissionDate": "2024-02-01",
+    "dischargeDate": "2024-02-03",
+    "visitType": "Inpatient Surgery",
+    "encounterDate": "2024-02-01"
+  },
+  "caseNotes": {
+    "primaryNoteText": "PREOPERATIVE DIAGNOSIS: Morbid obesity with comorbidities\n\nPROCEDURE: Laparoscopic Roux-en-Y gastric bypass with concurrent paraesophageal hernia repair\n\nINDICATIONS: The patient has morbid obesity with BMI of 47.3 kg/m². Multiple weight loss attempts have failed. Patient meets criteria for bariatric surgery with obesity-related comorbidities including type 2 diabetes, hypertension, and sleep apnea.\n\nDESCRIPTION: The patient underwent laparoscopic Roux-en-Y gastric bypass. Five laparoscopic ports were placed. The stomach was divided using a linear stapler to create a small gastric pouch. A Roux-en-Y limb was created with gastrojejunostomy and jejunojejunostomy anastomoses. A large paraesophageal hernia was identified and repaired during the procedure. The hernia sac was reduced and the crural repair was performed with non-absorbable sutures. Mesh reinforcement was placed. A central venous catheter was placed in the right internal jugular vein under ultrasound guidance for intraoperative monitoring and fluid management. Good blood return obtained. The procedure was completed without complications.",
+    "additionalNotes": [
+      {
+        "type": "admission",
+        "content": "ADMISSION DIAGNOSIS: Morbid obesity scheduled for bariatric surgery\n\nHISTORY: Patient has morbid obesity with BMI of 47.3 kg/m². Multiple weight loss attempts have failed. Patient meets criteria for bariatric surgery with obesity-related comorbidities. Patient has poorly controlled type 2 diabetes mellitus with recent HbA1c of 9.2%. Currently on metformin and insulin therapy. Frequent episodes of hyperglycemia requiring adjustment of medications. Patient has essential hypertension currently managed with lisinopril and hydrochlorothiazide. Blood pressure readings have been elevated despite medication compliance. Patient has severe obstructive sleep apnea confirmed by overnight polysomnography. AHI of 42 events per hour. Currently uses CPAP therapy nightly.\n\nPREOPERATIVE WORKUP: Preoperative 12-lead ECG was obtained prior to surgery. ECG shows normal sinus rhythm with rate 78 bpm. No acute changes. Patient cleared for surgery from cardiac standpoint. CT scan demonstrates a large paraesophageal hernia with significant portion of stomach herniated into the thoracic cavity. No evidence of obstruction or strangulation."
+      },
+      {
+        "type": "pathology",
+        "content": "SURGICAL PATHOLOGY REPORT\n\nCLINICAL HISTORY: Morbid obesity, gastric bypass surgery\n\nGROSS DESCRIPTION: The specimen consists of gastric fundus tissue measuring 2.5 x 1.8 x 0.8 cm. The tissue is tan-pink and soft.\n\nMICROSCOPIC DESCRIPTION: Sections show chronic gastritis with moderate inflammatory infiltrate consisting of lymphocytes and plasma cells. The gastric mucosa shows mild reactive changes. No evidence of malignancy is identified. H. pylori organisms are not identified on routine staining.\n\nDIAGNOSIS: Gastric tissue with chronic gastritis, no evidence of malignancy"
+      },
+      {
+        "type": "discharge",
+        "content": "DISCHARGE SUMMARY\n\nPROCEDURE: Laparoscopic Roux-en-Y gastric bypass with paraesophageal hernia repair\n\nHOSPITAL COURSE: Patient tolerated the procedure well without immediate complications. Postoperative course was uncomplicated. Patient was started on clear liquids on postoperative day 1 and advanced to full liquids on day 2. Pain was well controlled with oral medications. Patient was ambulating independently and vital signs remained stable.\n\nDISCHARGE INSTRUCTIONS: Patient discharged home on postoperative day 2 in stable condition. Follow-up scheduled in 1 week for wound check and dietary counseling. Patient instructed on bariatric diet progression and given educational materials."
+      },
+      {
+        "type": "progress",
+        "content": "POSTOPERATIVE DAY 1 PROGRESS NOTE\n\nSubjective: Patient reports minimal pain, rates 3/10. Tolerating clear liquids well. No nausea or vomiting.\n\nObjective: Vital signs stable. Afebrile. Incisions clean, dry, and intact. Abdomen soft, non-distended. Bowel sounds present.\n\nAssessment: Postoperative day 1 status post laparoscopic gastric bypass with hernia repair. Patient doing well.\n\nPlan: Continue clear liquids. Advance to full liquids if tolerated. Continue pain management. Ambulation as tolerated."
+      }
+    ]
+  }
+}
