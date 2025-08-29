@@ -1,22 +1,114 @@
-name: Show Me the S3cr3tz
-on: [push]
+name: Build and deploy Next.js (standalone) to Azure Web App - OxkairApp
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+concurrency:
+  group: build-deploy-oxkair-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  debug:
-    name: Debug
+  build:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
     steps:
-    - name: Check out code
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-    - name: Set up secret file
-      env:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3C8D677766BF4E6E9F6CBDC9B544B109 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C1B3F874326D4EA2A6233DCECC40EE58 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_7CE66BF56CA04B458F2DBE2201EC3ED5 }}
+      - name: Set up Node.js (with npm cache)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: oxkair-shell/package-lock.json
 
-      run: |
-        echo ${{secrets.client-id}} | sed 's/./& /g'
-        echo ${{secrets.tenant-id}} | sed 's/./& /g'
-        echo ${{secrets.subscription-id}} | sed 's/./& /g'
+      - name: Restore node_modules and .next cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            oxkair-shell/node_modules
+            oxkair-shell/.next/cache
+          # primary key uses package-lock; include runner os to be safe
+          key: ${{ runner.os }}-oxkair-node-${{ hashFiles('oxkair-shell/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-oxkair-node-
+
+      - name: Build Next.js (standalone) + verify
+        working-directory: ./oxkair-shell
+        run: |
+          set -euo pipefail
+
+          echo "→ Clean install (uses cache when available)"
+          npm ci --prefer-offline --no-audit --no-fund
+
+          echo "→ Build"
+          npm run build
+
+          echo "→ Prepare standalone payload"
+          mkdir -p .next/standalone/.next
+          cp -r .next/static .next/standalone/.next/static
+          cp .next/BUILD_ID .next/standalone/.next/BUILD_ID
+          if [ -d ".next/server" ]; then cp -r .next/server .next/standalone/.next/server; fi
+          if [ -d "public" ]; then cp -r public .next/standalone/public; fi
+
+          # Ensure we can `npm start` within the standalone dir
+          node -e "const fs=require('fs');const p='./.next/standalone/package.json';const j=JSON.parse(fs.readFileSync(p));j.scripts=j.scripts||{};j.scripts.start='node server.js';fs.writeFileSync(p, JSON.stringify(j,null,2));"
+
+          echo "→ Show what we're shipping (debug)"
+          (cd .next/standalone && ls -la && echo '--- .next contents ---' && ls -la .next || true)
+
+          echo "→ Validate expected files exist"
+          test -f ".next/standalone/server.js" || (echo "Missing server.js in standalone" && exit 1)
+          test -f ".next/standalone/.next/BUILD_ID" || (echo "Missing BUILD_ID" && exit 1)
+          test -d ".next/standalone/.next/static" || (echo "Missing .next/static" && exit 1)
+
+          echo "✅ Standalone bundle looks good."
+
+      - name: Upload artifact (standalone root)
+        uses: actions/upload-artifact@v4
+        with:
+          name: next-standalone-bundle
+          path: ./oxkair-shell/.next/standalone
+          include-hidden-files: true
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: next-standalone-bundle
+          path: ./bundle
+
+      - name: Show bundle root (debug)
+        run: |
+          echo "Bundle root listing:"
+          ls -la ./bundle
+          echo ".next listing:"
+          ls -la ./bundle/.next || true
+
+      # Zip so that the ZIP ROOT == standalone root (server.js, .next/, public/)
+      - name: Zip bundle (root == standalone root)
+        run: |
+          cd bundle
+          zip -r ../site.zip .
+
+      - name: Azure login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+
+      - name: Deploy to Azure Web App (zip)
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'OxkairApp'
+          slot-name: 'Production'
+          package: ./site.zip
